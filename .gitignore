@@ -213,3 +213,8 @@ data/*.sqlite3
 data/*.sql
 *.log
 .DS_Store
+
+
+/ooredoo_crm.db
+/node_modules
+.env

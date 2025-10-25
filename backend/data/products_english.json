@@ -1,0 +1,2256 @@
+[
+  {
+    "product_id": "PROD000001",
+    "name": "Business Fiber Internet 100Mbps",
+    "category": "Connectivity",
+    "subcategory": "Fiber Internet",
+    "description": "High-speed fiber optic internet connection with 100Mbps download and upload speeds. Includes static IP address, 24/7 technical support, and business-grade router.",
+    "pricing_tiers": {
+      "12_months": 299,
+      "24_months": 284.05,
+      "36_months": 269.1
+    },
+    "bandwidth": "100Mbps",
+    "sla_uptime": 99.9,
+    "features": [
+      "Symmetric upload/download speeds",
+      "Static IP address included",
+      "Business-grade router",
+      "24/7 technical support",
+      "Priority repair service",
+      "Unlimited data usage"
+    ],
+    "target_business_size": "Small businesses, home offices",
+    "setup_fee": 200.0,
+    "cross_sell_products": [
+      "PROD000050",
+      "PROD000070"
+    ],
+    "upsell_products": [
+      "PROD000002"
+    ]
+  },
+  {
+    "product_id": "PROD000002",
+    "name": "Business Fiber Internet 200Mbps",
+    "category": "Connectivity",
+    "subcategory": "Fiber Internet",
+    "description": "High-speed fiber optic internet connection with 200Mbps download and upload speeds. Includes static IP address, 24/7 technical support, and business-grade router.",
+    "pricing_tiers": {
+      "12_months": 449,
+      "24_months": 426.55,
+      "36_months": 404.1
+    },
+    "bandwidth": "200Mbps",
+    "sla_uptime": 99.9,
+    "features": [
+      "Symmetric upload/download speeds",
+      "Static IP address included",
+      "Business-grade router",
+      "24/7 technical support",
+      "Priority repair service",
+      "Unlimited data usage"
+    ],
+    "target_business_size": "Small to medium businesses",
+    "setup_fee": 200.0,
+    "cross_sell_products": [
+      "PROD000050",
+      "PROD000070"
+    ],
+    "upsell_products": [
+      "PROD000003"
+    ]
+  },
+  {
+    "product_id": "PROD000003",
+    "name": "Business Fiber Internet 500Mbps",
+    "category": "Connectivity",
+    "subcategory": "Fiber Internet",
+    "description": "High-speed fiber optic internet connection with 500Mbps download and upload speeds. Includes static IP address, 24/7 technical support, and business-grade router.",
+    "pricing_tiers": {
+      "12_months": 699,
+      "24_months": 664.05,
+      "36_months": 629.1
+    },
+    "bandwidth": "500Mbps",
+    "sla_uptime": 99.9,
+    "features": [
+      "Symmetric upload/download speeds",
+      "Static IP address included",
+      "Business-grade router",
+      "24/7 technical support",
+      "Priority repair service",
+      "Unlimited data usage"
+    ],
+    "target_business_size": "Medium businesses with high traffic",
+    "setup_fee": 200.0,
+    "cross_sell_products": [
+      "PROD000050",
+      "PROD000070"
+    ],
+    "upsell_products": [
+      "PROD000004"
+    ]
+  },
+  {
+    "product_id": "PROD000004",
+    "name": "Business Fiber Internet 1000Mbps",
+    "category": "Connectivity",
+    "subcategory": "Fiber Internet",
+    "description": "High-speed fiber optic internet connection with 1000Mbps download and upload speeds. Includes static IP address, 24/7 technical support, and business-grade router.",
+    "pricing_tiers": {
+      "12_months": 999,
+      "24_months": 949.05,
+      "36_months": 899.1
+    },
+    "bandwidth": "1000Mbps",
+    "sla_uptime": 99.9,
+    "features": [
+      "Symmetric upload/download speeds",
+      "Static IP address included",
+      "Business-grade router",
+      "24/7 technical support",
+      "Priority repair service",
+      "Unlimited data usage"
+    ],
+    "target_business_size": "Large businesses, data-intensive operations",
+    "setup_fee": 200.0,
+    "cross_sell_products": [
+      "PROD000050",
+      "PROD000070"
+    ],
+    "upsell_products": [
+      "PROD000005"
+    ]
+  },
+  {
+    "product_id": "PROD000005",
+    "name": "Business Fiber Internet 2000Mbps",
+    "category": "Connectivity",
+    "subcategory": "Fiber Internet",
+    "description": "High-speed fiber optic internet connection with 2000Mbps download and upload speeds. Includes static IP address, 24/7 technical support, and business-grade router.",
+    "pricing_tiers": {
+      "12_months": 1499,
+      "24_months": 1424.05,
+      "36_months": 1349.1
+    },
+    "bandwidth": "2000Mbps",
+    "sla_uptime": 99.9,
+    "features": [
+      "Symmetric upload/download speeds",
+      "Static IP address included",
+      "Business-grade router",
+      "24/7 technical support",
+      "Priority repair service",
+      "Unlimited data usage"
+    ],
+    "target_business_size": "Enterprise businesses, cloud services",
+    "setup_fee": 200.0,
+    "cross_sell_products": [
+      "PROD000050",
+      "PROD000070"
+    ],
+    "upsell_products": [
+      "PROD000006"
+    ]
+  },
+  {
+    "product_id": "PROD000006",
+    "name": "Business Fiber Internet 5000Mbps",
+    "category": "Connectivity",
+    "subcategory": "Fiber Internet",
+    "description": "High-speed fiber optic internet connection with 5000Mbps download and upload speeds. Includes static IP address, 24/7 technical support, and business-grade router.",
+    "pricing_tiers": {
+      "12_months": 2499,
+      "24_months": 2374.05,
+      "36_months": 2249.1
+    },
+    "bandwidth": "5000Mbps",
+    "sla_uptime": 99.9,
+    "features": [
+      "Symmetric upload/download speeds",
+      "Static IP address included",
+      "Business-grade router",
+      "24/7 technical support",
+      "Priority repair service",
+      "Unlimited data usage"
+    ],
+    "target_business_size": "Large enterprises, data centers",
+    "setup_fee": 200.0,
+    "cross_sell_products": [
+      "PROD000050",
+      "PROD000070"
+    ],
+    "upsell_products": [
+      "PROD000007"
+    ]
+  },
+  {
+    "product_id": "PROD000007",
+    "name": "Business Fiber Internet 10000Mbps",
+    "category": "Connectivity",
+    "subcategory": "Fiber Internet",
+    "description": "High-speed fiber optic internet connection with 10000Mbps download and upload speeds. Includes static IP address, 24/7 technical support, and business-grade router.",
+    "pricing_tiers": {
+      "12_months": 3999,
+      "24_months": 3799.05,
+      "36_months": 3599.1
+    },
+    "bandwidth": "10000Mbps",
+    "sla_uptime": 99.9,
+    "features": [
+      "Symmetric upload/download speeds",
+      "Static IP address included",
+      "Business-grade router",
+      "24/7 technical support",
+      "Priority repair service",
+      "Unlimited data usage"
+    ],
+    "target_business_size": "Enterprise data centers, ISPs",
+    "setup_fee": 200.0,
+    "cross_sell_products": [
+      "PROD000050",
+      "PROD000070"
+    ],
+    "upsell_products": []
+  },
+  {
+    "product_id": "PROD000008",
+    "name": "Dedicated Leased Line 10Mbps",
+    "category": "Connectivity",
+    "subcategory": "Leased Line",
+    "description": "Point-to-point dedicated connection with guaranteed 10Mbps bandwidth. Ideal for Standard business applications. Comes with SLA guarantee and dedicated support.",
+    "pricing_tiers": {
+      "12_months": 1200,
+      "24_months": 1116.0,
+      "36_months": 1056.0
+    },
+    "bandwidth": "10Mbps",
+    "sla_uptime": 99.95,
+    "features": [
+      "Dedicated point-to-point connection",
+      "Guaranteed bandwidth",
+      "Symmetric speeds",
+      "Multiple static IPs",
+      "4-hour fault response",
+      "Premium technical support"
+    ],
+    "target_business_size": "Medium to large businesses",
+    "setup_fee": 1000.0,
+    "cross_sell_products": [
+      "PROD000060",
+      "PROD000075"
+    ],
+    "upsell_products": [
+      "PROD000009"
+    ]
+  },
+  {
+    "product_id": "PROD000009",
+    "name": "Dedicated Leased Line 20Mbps",
+    "category": "Connectivity",
+    "subcategory": "Leased Line",
+    "description": "Point-to-point dedicated connection with guaranteed 20Mbps bandwidth. Ideal for Medium data transfer requirements. Comes with SLA guarantee and dedicated support.",
+    "pricing_tiers": {
+      "12_months": 2100,
+      "24_months": 1953.0,
+      "36_months": 1848.0
+    },
+    "bandwidth": "20Mbps",
+    "sla_uptime": 99.95,
+    "features": [
+      "Dedicated point-to-point connection",
+      "Guaranteed bandwidth",
+      "Symmetric speeds",
+      "Multiple static IPs",
+      "4-hour fault response",
+      "Premium technical support"
+    ],
+    "target_business_size": "Medium to large businesses",
+    "setup_fee": 1000.0,
+    "cross_sell_products": [
+      "PROD000060",
+      "PROD000075"
+    ],
+    "upsell_products": [
+      "PROD000010"
+    ]
+  },
+  {
+    "product_id": "PROD000010",
+    "name": "Dedicated Leased Line 50Mbps",
+    "category": "Connectivity",
+    "subcategory": "Leased Line",
+    "description": "Point-to-point dedicated connection with guaranteed 50Mbps bandwidth. Ideal for High-volume data transfers. Comes with SLA guarantee and dedicated support.",
+    "pricing_tiers": {
+      "12_months": 4500,
+      "24_months": 4185.0,
+      "36_months": 3960.0
+    },
+    "bandwidth": "50Mbps",
+    "sla_uptime": 99.95,
+    "features": [
+      "Dedicated point-to-point connection",
+      "Guaranteed bandwidth",
+      "Symmetric speeds",
+      "Multiple static IPs",
+      "4-hour fault response",
+      "Premium technical support"
+    ],
+    "target_business_size": "Medium to large businesses",
+    "setup_fee": 1000.0,
+    "cross_sell_products": [
+      "PROD000060",
+      "PROD000075"
+    ],
+    "upsell_products": [
+      "PROD000011"
+    ]
+  },
+  {
+    "product_id": "PROD000011",
+    "name": "Dedicated Leased Line 100Mbps",
+    "category": "Connectivity",
+    "subcategory": "Leased Line",
+    "description": "Point-to-point dedicated connection with guaranteed 100Mbps bandwidth. Ideal for Enterprise connectivity needs. Comes with SLA guarantee and dedicated support.",
+    "pricing_tiers": {
+      "12_months": 8000,
+      "24_months": 7440.0,
+      "36_months": 7040.0
+    },
+    "bandwidth": "100Mbps",
+    "sla_uptime": 99.95,
+    "features": [
+      "Dedicated point-to-point connection",
+      "Guaranteed bandwidth",
+      "Symmetric speeds",
+      "Multiple static IPs",
+      "4-hour fault response",
+      "Premium technical support"
+    ],
+    "target_business_size": "Medium to large businesses",
+    "setup_fee": 1000.0,
+    "cross_sell_products": [
+      "PROD000060",
+      "PROD000075"
+    ],
+    "upsell_products": [
+      "PROD000012"
+    ]
+  },
+  {
+    "product_id": "PROD000012",
+    "name": "Dedicated Leased Line 1000Mbps",
+    "category": "Connectivity",
+    "subcategory": "Leased Line",
+    "description": "Point-to-point dedicated connection with guaranteed 1000Mbps bandwidth. Ideal for Data center interconnection. Comes with SLA guarantee and dedicated support.",
+    "pricing_tiers": {
+      "12_months": 15000,
+      "24_months": 13950.0,
+      "36_months": 13200.0
+    },
+    "bandwidth": "1000Mbps",
+    "sla_uptime": 99.95,
+    "features": [
+      "Dedicated point-to-point connection",
+      "Guaranteed bandwidth",
+      "Symmetric speeds",
+      "Multiple static IPs",
+      "4-hour fault response",
+      "Premium technical support"
+    ],
+    "target_business_size": "Medium to large businesses",
+    "setup_fee": 1000.0,
+    "cross_sell_products": [
+      "PROD000060",
+      "PROD000075"
+    ],
+    "upsell_products": []
+  },
+  {
+    "product_id": "PROD000013",
+    "name": "MPLS Network Solution - Standard",
+    "category": "Connectivity",
+    "subcategory": "MPLS",
+    "description": "Multi-Protocol Label Switching network for Multi-site connectivity for growing businesses. Includes 50Mbps aggregate bandwidth, QoS management, and network monitoring.",
+    "pricing_tiers": {
+      "12_months": 1800,
+      "24_months": 1656.0,
+      "36_months": 1530.0
+    },
+    "bandwidth": "50Mbps aggregate",
+    "sla_uptime": 99.95,
+    "features": [
+      "Multi-site connectivity",
+      "Quality of Service (QoS)",
+      "Traffic prioritization",
+      "Network monitoring dashboard",
+      "Managed router service",
+      "24/7 NOC support"
+    ],
+    "target_business_size": "Medium to large enterprises",
+    "setup_fee": 2500.0,
+    "cross_sell_products": [
+      "PROD000050",
+      "PROD000090"
+    ],
+    "upsell_products": [
+      "PROD000055"
+    ]
+  },
+  {
+    "product_id": "PROD000014",
+    "name": "MPLS Network Solution - Advanced",
+    "category": "Connectivity",
+    "subcategory": "MPLS",
+    "description": "Multi-Protocol Label Switching network for Enterprise-grade multi-site networking. Includes 100Mbps aggregate bandwidth, QoS management, and network monitoring.",
+    "pricing_tiers": {
+      "12_months": 3200,
+      "24_months": 2944.0,
+      "36_months": 2720.0
+    },
+    "bandwidth": "100Mbps aggregate",
+    "sla_uptime": 99.95,
+    "features": [
+      "Multi-site connectivity",
+      "Quality of Service (QoS)",
+      "Traffic prioritization",
+      "Network monitoring dashboard",
+      "Managed router service",
+      "24/7 NOC support"
+    ],
+    "target_business_size": "Medium to large enterprises",
+    "setup_fee": 2500.0,
+    "cross_sell_products": [
+      "PROD000050",
+      "PROD000090"
+    ],
+    "upsell_products": [
+      "PROD000055"
+    ]
+  },
+  {
+    "product_id": "PROD000015",
+    "name": "MPLS Network Solution - Premium",
+    "category": "Connectivity",
+    "subcategory": "MPLS",
+    "description": "Multi-Protocol Label Switching network for Large-scale enterprise WAN solutions. Includes 200Mbps aggregate bandwidth, QoS management, and network monitoring.",
+    "pricing_tiers": {
+      "12_months": 5500,
+      "24_months": 5060.0,
+      "36_months": 4675.0
+    },
+    "bandwidth": "200Mbps aggregate",
+    "sla_uptime": 99.95,
+    "features": [
+      "Multi-site connectivity",
+      "Quality of Service (QoS)",
+      "Traffic prioritization",
+      "Network monitoring dashboard",
+      "Managed router service",
+      "24/7 NOC support"
+    ],
+    "target_business_size": "Medium to large enterprises",
+    "setup_fee": 2500.0,
+    "cross_sell_products": [
+      "PROD000050",
+      "PROD000090"
+    ],
+    "upsell_products": [
+      "PROD000055"
+    ]
+  },
+  {
+    "product_id": "PROD000016",
+    "name": "MPLS Network Solution - Enterprise",
+    "category": "Connectivity",
+    "subcategory": "MPLS",
+    "description": "Multi-Protocol Label Switching network for Complex multi-national connectivity. Includes 500Mbps aggregate bandwidth, QoS management, and network monitoring.",
+    "pricing_tiers": {
+      "12_months": 9000,
+      "24_months": 8280.0,
+      "36_months": 7650.0
+    },
+    "bandwidth": "500Mbps aggregate",
+    "sla_uptime": 99.95,
+    "features": [
+      "Multi-site connectivity",
+      "Quality of Service (QoS)",
+      "Traffic prioritization",
+      "Network monitoring dashboard",
+      "Managed router service",
+      "24/7 NOC support"
+    ],
+    "target_business_size": "Medium to large enterprises",
+    "setup_fee": 2500.0,
+    "cross_sell_products": [
+      "PROD000050",
+      "PROD000090"
+    ],
+    "upsell_products": [
+      "PROD000055"
+    ]
+  },
+  {
+    "product_id": "PROD000017",
+    "name": "SD-WAN Solution - Basic",
+    "category": "Connectivity",
+    "subcategory": "SD-WAN",
+    "description": "Software-Defined Wide Area Network for Small businesses with 2-5 locations. Supports up to 5 sites with intelligent traffic routing and application optimization.",
+    "pricing_tiers": {
+      "12_months": 1500,
+      "24_months": 1410.0,
+      "36_months": 1320.0
+    },
+    "bandwidth": "100Mbps per site",
+    "sla_uptime": 99.9,
+    "features": [
+      "Support for up to 5 sites",
+      "Intelligent traffic routing",
+      "Application-aware QoS",
+      "Cloud connectivity optimization",
+      "Centralized management portal",
+      "Zero-touch provisioning"
+    ],
+    "target_business_size": "Small businesses with 2-5 locations",
+    "setup_fee": 3000.0,
+    "cross_sell_products": [
+      "PROD000050",
+      "PROD000070"
+    ],
+    "upsell_products": [
+      "PROD000018"
+    ]
+  },
+  {
+    "product_id": "PROD000018",
+    "name": "SD-WAN Solution - Professional",
+    "category": "Connectivity",
+    "subcategory": "SD-WAN",
+    "description": "Software-Defined Wide Area Network for Medium businesses with multiple branches. Supports up to 10 sites with intelligent traffic routing and application optimization.",
+    "pricing_tiers": {
+      "12_months": 2800,
+      "24_months": 2632.0,
+      "36_months": 2464.0
+    },
+    "bandwidth": "200Mbps per site",
+    "sla_uptime": 99.9,
+    "features": [
+      "Support for up to 10 sites",
+      "Intelligent traffic routing",
+      "Application-aware QoS",
+      "Cloud connectivity optimization",
+      "Centralized management portal",
+      "Zero-touch provisioning"
+    ],
+    "target_business_size": "Medium businesses with multiple branches",
+    "setup_fee": 3000.0,
+    "cross_sell_products": [
+      "PROD000050",
+      "PROD000070"
+    ],
+    "upsell_products": [
+      "PROD000019"
+    ]
+  },
+  {
+    "product_id": "PROD000019",
+    "name": "SD-WAN Solution - Enterprise",
+    "category": "Connectivity",
+    "subcategory": "SD-WAN",
+    "description": "Software-Defined Wide Area Network for Large enterprises with complex networks. Supports up to 25 sites with intelligent traffic routing and application optimization.",
+    "pricing_tiers": {
+      "12_months": 5000,
+      "24_months": 4700.0,
+      "36_months": 4400.0
+    },
+    "bandwidth": "500Mbps per site",
+    "sla_uptime": 99.9,
+    "features": [
+      "Support for up to 25 sites",
+      "Intelligent traffic routing",
+      "Application-aware QoS",
+      "Cloud connectivity optimization",
+      "Centralized management portal",
+      "Zero-touch provisioning"
+    ],
+    "target_business_size": "Large enterprises with complex networks",
+    "setup_fee": 3000.0,
+    "cross_sell_products": [
+      "PROD000050",
+      "PROD000070"
+    ],
+    "upsell_products": [
+      "PROD000020"
+    ]
+  },
+  {
+    "product_id": "PROD000020",
+    "name": "SD-WAN Solution - Global",
+    "category": "Connectivity",
+    "subcategory": "SD-WAN",
+    "description": "Software-Defined Wide Area Network for Multi-national corporations. Supports up to 50 sites with intelligent traffic routing and application optimization.",
+    "pricing_tiers": {
+      "12_months": 8500,
+      "24_months": 7990.0,
+      "36_months": 7480.0
+    },
+    "bandwidth": "1000Mbps per site",
+    "sla_uptime": 99.9,
+    "features": [
+      "Support for up to 50 sites",
+      "Intelligent traffic routing",
+      "Application-aware QoS",
+      "Cloud connectivity optimization",
+      "Centralized management portal",
+      "Zero-touch provisioning"
+    ],
+    "target_business_size": "Multi-national corporations",
+    "setup_fee": 3000.0,
+    "cross_sell_products": [
+      "PROD000050",
+      "PROD000070"
+    ],
+    "upsell_products": []
+  },
+  {
+    "product_id": "PROD000021",
+    "name": "Virtual Server - Micro",
+    "category": "Cloud",
+    "subcategory": "Compute",
+    "description": "Cloud virtual machine with 2 vCPUs, 4GB RAM, and 50GB SSD storage. Perfect for Development, testing, small websites. Includes automated backups and 24/7 monitoring.",
+    "pricing_tiers": {
+      "hourly": 0.14,
+      "monthly": 99,
+      "annual": 990
+    },
+    "capacity": "2 vCPU, 4GB RAM, 50GB SSD",
+    "sla_uptime": 99.95,
+    "features": [
+      "2 virtual CPUs",
+      "4GB RAM",
+      "50GB SSD storage",
+      "Automated daily backups",
+      "24/7 system monitoring",
+      "Root/admin access",
+      "Snapshot capability",
+      "Load balancer ready"
+    ],
+    "target_business_size": "Small to large businesses",
+    "setup_fee": 0.0,
+    "cross_sell_products": [
+      "PROD000060",
+      "PROD000070"
+    ],
+    "upsell_products": [
+      "PROD000022"
+    ]
+  },
+  {
+    "product_id": "PROD000022",
+    "name": "Virtual Server - Small",
+    "category": "Cloud",
+    "subcategory": "Compute",
+    "description": "Cloud virtual machine with 4 vCPUs, 8GB RAM, and 100GB SSD storage. Perfect for Small applications, databases. Includes automated backups and 24/7 monitoring.",
+    "pricing_tiers": {
+      "hourly": 0.26,
+      "monthly": 189,
+      "annual": 1890
+    },
+    "capacity": "4 vCPU, 8GB RAM, 100GB SSD",
+    "sla_uptime": 99.95,
+    "features": [
+      "4 virtual CPUs",
+      "8GB RAM",
+      "100GB SSD storage",
+      "Automated daily backups",
+      "24/7 system monitoring",
+      "Root/admin access",
+      "Snapshot capability",
+      "Load balancer ready"
+    ],
+    "target_business_size": "Small to large businesses",
+    "setup_fee": 0.0,
+    "cross_sell_products": [
+      "PROD000060",
+      "PROD000070"
+    ],
+    "upsell_products": [
+      "PROD000023"
+    ]
+  },
+  {
+    "product_id": "PROD000023",
+    "name": "Virtual Server - Medium",
+    "category": "Cloud",
+    "subcategory": "Compute",
+    "description": "Cloud virtual machine with 8 vCPUs, 16GB RAM, and 200GB SSD storage. Perfect for Production applications, web servers. Includes automated backups and 24/7 monitoring.",
+    "pricing_tiers": {
+      "hourly": 0.48,
+      "monthly": 349,
+      "annual": 3490
+    },
+    "capacity": "8 vCPU, 16GB RAM, 200GB SSD",
+    "sla_uptime": 99.95,
+    "features": [
+      "8 virtual CPUs",
+      "16GB RAM",
+      "200GB SSD storage",
+      "Automated daily backups",
+      "24/7 system monitoring",
+      "Root/admin access",
+      "Snapshot capability",
+      "Load balancer ready"
+    ],
+    "target_business_size": "Small to large businesses",
+    "setup_fee": 0.0,
+    "cross_sell_products": [
+      "PROD000060",
+      "PROD000070"
+    ],
+    "upsell_products": [
+      "PROD000024"
+    ]
+  },
+  {
+    "product_id": "PROD000024",
+    "name": "Virtual Server - Large",
+    "category": "Cloud",
+    "subcategory": "Compute",
+    "description": "Cloud virtual machine with 16 vCPUs, 32GB RAM, and 500GB SSD storage. Perfect for Resource-intensive applications. Includes automated backups and 24/7 monitoring.",
+    "pricing_tiers": {
+      "hourly": 0.89,
+      "monthly": 649,
+      "annual": 6490
+    },
+    "capacity": "16 vCPU, 32GB RAM, 500GB SSD",
+    "sla_uptime": 99.95,
+    "features": [
+      "16 virtual CPUs",
+      "32GB RAM",
+      "500GB SSD storage",
+      "Automated daily backups",
+      "24/7 system monitoring",
+      "Root/admin access",
+      "Snapshot capability",
+      "Load balancer ready"
+    ],
+    "target_business_size": "Small to large businesses",
+    "setup_fee": 0.0,
+    "cross_sell_products": [
+      "PROD000060",
+      "PROD000070"
+    ],
+    "upsell_products": [
+      "PROD000025"
+    ]
+  },
+  {
+    "product_id": "PROD000025",
+    "name": "Virtual Server - X-Large",
+    "category": "Cloud",
+    "subcategory": "Compute",
+    "description": "Cloud virtual machine with 32 vCPUs, 64GB RAM, and 1000GB SSD storage. Perfect for High-performance computing. Includes automated backups and 24/7 monitoring.",
+    "pricing_tiers": {
+      "hourly": 1.64,
+      "monthly": 1199,
+      "annual": 11990
+    },
+    "capacity": "32 vCPU, 64GB RAM, 1000GB SSD",
+    "sla_uptime": 99.95,
+    "features": [
+      "32 virtual CPUs",
+      "64GB RAM",
+      "1000GB SSD storage",
+      "Automated daily backups",
+      "24/7 system monitoring",
+      "Root/admin access",
+      "Snapshot capability",
+      "Load balancer ready"
+    ],
+    "target_business_size": "Small to large businesses",
+    "setup_fee": 0.0,
+    "cross_sell_products": [
+      "PROD000060",
+      "PROD000070"
+    ],
+    "upsell_products": [
+      "PROD000026"
+    ]
+  },
+  {
+    "product_id": "PROD000026",
+    "name": "Virtual Server - 2X-Large",
+    "category": "Cloud",
+    "subcategory": "Compute",
+    "description": "Cloud virtual machine with 64 vCPUs, 128GB RAM, and 2000GB SSD storage. Perfect for Enterprise applications, big data. Includes automated backups and 24/7 monitoring.",
+    "pricing_tiers": {
+      "hourly": 3.15,
+      "monthly": 2299,
+      "annual": 22990
+    },
+    "capacity": "64 vCPU, 128GB RAM, 2000GB SSD",
+    "sla_uptime": 99.95,
+    "features": [
+      "64 virtual CPUs",
+      "128GB RAM",
+      "2000GB SSD storage",
+      "Automated daily backups",
+      "24/7 system monitoring",
+      "Root/admin access",
+      "Snapshot capability",
+      "Load balancer ready"
+    ],
+    "target_business_size": "Small to large businesses",
+    "setup_fee": 0.0,
+    "cross_sell_products": [
+      "PROD000060",
+      "PROD000070"
+    ],
+    "upsell_products": []
+  },
+  {
+    "product_id": "PROD000027",
+    "name": "Cloud Storage 100GB",
+    "category": "Cloud",
+    "subcategory": "Storage",
+    "description": "Secure cloud storage with 100GB capacity. Ideal for Small file storage needs. Includes encryption, versioning, and geo-redundancy.",
+    "pricing_tiers": {
+      "monthly": 45,
+      "annual": 450
+    },
+    "capacity": "100GB",
+    "sla_uptime": 99.99,
+    "features": [
+      "100GB storage capacity",
+      "Encryption at rest and in transit",
+      "File versioning",
+      "Geo-redundant storage",
+      "API access",
+      "Web interface",
+      "Automated backup",
+      "99.99% durability"
+    ],
+    "target_business_size": "All business sizes",
+    "setup_fee": 0.0,
+    "cross_sell_products": [
+      "PROD000050",
+      "PROD000075"
+    ],
+    "upsell_products": [
+      "PROD000028"
+    ]
+  },
+  {
+    "product_id": "PROD000028",
+    "name": "Cloud Storage 500GB",
+    "category": "Cloud",
+    "subcategory": "Storage",
+    "description": "Secure cloud storage with 500GB capacity. Ideal for Medium data storage. Includes encryption, versioning, and geo-redundancy.",
+    "pricing_tiers": {
+      "monthly": 180,
+      "annual": 1800
+    },
+    "capacity": "500GB",
+    "sla_uptime": 99.99,
+    "features": [
+      "500GB storage capacity",
+      "Encryption at rest and in transit",
+      "File versioning",
+      "Geo-redundant storage",
+      "API access",
+      "Web interface",
+      "Automated backup",
+      "99.99% durability"
+    ],
+    "target_business_size": "All business sizes",
+    "setup_fee": 0.0,
+    "cross_sell_products": [
+      "PROD000050",
+      "PROD000075"
+    ],
+    "upsell_products": [
+      "PROD000029"
+    ]
+  },
+  {
+    "product_id": "PROD000029",
+    "name": "Cloud Storage 1000GB",
+    "category": "Cloud",
+    "subcategory": "Storage",
+    "description": "Secure cloud storage with 1000GB capacity. Ideal for Large file repositories. Includes encryption, versioning, and geo-redundancy.",
+    "pricing_tiers": {
+      "monthly": 320,
+      "annual": 3200
+    },
+    "capacity": "1000GB",
+    "sla_uptime": 99.99,
+    "features": [
+      "1000GB storage capacity",
+      "Encryption at rest and in transit",
+      "File versioning",
+      "Geo-redundant storage",
+      "API access",
+      "Web interface",
+      "Automated backup",
+      "99.99% durability"
+    ],
+    "target_business_size": "All business sizes",
+    "setup_fee": 0.0,
+    "cross_sell_products": [
+      "PROD000050",
+      "PROD000075"
+    ],
+    "upsell_products": [
+      "PROD000030"
+    ]
+  },
+  {
+    "product_id": "PROD000030",
+    "name": "Cloud Storage 5000GB",
+    "category": "Cloud",
+    "subcategory": "Storage",
+    "description": "Secure cloud storage with 5000GB capacity. Ideal for Enterprise data storage. Includes encryption, versioning, and geo-redundancy.",
+    "pricing_tiers": {
+      "monthly": 1400,
+      "annual": 14000
+    },
+    "capacity": "5000GB",
+    "sla_uptime": 99.99,
+    "features": [
+      "5000GB storage capacity",
+      "Encryption at rest and in transit",
+      "File versioning",
+      "Geo-redundant storage",
+      "API access",
+      "Web interface",
+      "Automated backup",
+      "99.99% durability"
+    ],
+    "target_business_size": "All business sizes",
+    "setup_fee": 0.0,
+    "cross_sell_products": [
+      "PROD000050",
+      "PROD000075"
+    ],
+    "upsell_products": [
+      "PROD000031"
+    ]
+  },
+  {
+    "product_id": "PROD000031",
+    "name": "Cloud Storage 10000GB",
+    "category": "Cloud",
+    "subcategory": "Storage",
+    "description": "Secure cloud storage with 10000GB capacity. Ideal for Big data and archives. Includes encryption, versioning, and geo-redundancy.",
+    "pricing_tiers": {
+      "monthly": 2500,
+      "annual": 25000
+    },
+    "capacity": "10000GB",
+    "sla_uptime": 99.99,
+    "features": [
+      "10000GB storage capacity",
+      "Encryption at rest and in transit",
+      "File versioning",
+      "Geo-redundant storage",
+      "API access",
+      "Web interface",
+      "Automated backup",
+      "99.99% durability"
+    ],
+    "target_business_size": "All business sizes",
+    "setup_fee": 0.0,
+    "cross_sell_products": [
+      "PROD000050",
+      "PROD000075"
+    ],
+    "upsell_products": [
+      "PROD000032"
+    ]
+  },
+  {
+    "product_id": "PROD000032",
+    "name": "Cloud Storage 50000GB",
+    "category": "Cloud",
+    "subcategory": "Storage",
+    "description": "Secure cloud storage with 50000GB capacity. Ideal for Massive data warehousing. Includes encryption, versioning, and geo-redundancy.",
+    "pricing_tiers": {
+      "monthly": 11000,
+      "annual": 110000
+    },
+    "capacity": "50000GB",
+    "sla_uptime": 99.99,
+    "features": [
+      "50000GB storage capacity",
+      "Encryption at rest and in transit",
+      "File versioning",
+      "Geo-redundant storage",
+      "API access",
+      "Web interface",
+      "Automated backup",
+      "99.99% durability"
+    ],
+    "target_business_size": "All business sizes",
+    "setup_fee": 0.0,
+    "cross_sell_products": [
+      "PROD000050",
+      "PROD000075"
+    ],
+    "upsell_products": []
+  },
+  {
+    "product_id": "PROD000033",
+    "name": "Cloud Backup Service - Basic",
+    "category": "Cloud",
+    "subcategory": "Backup",
+    "description": "Automated cloud backup solution with 500GB capacity for 5 servers. Designed for Small businesses. Includes point-in-time recovery and encryption.",
+    "pricing_tiers": {
+      "monthly": 150,
+      "annual": 1500
+    },
+    "capacity": "500GB, 5 servers",
+    "sla_uptime": 99.9,
+    "features": [
+      "500GB backup storage",
+      "Support for 5 servers",
+      "Automated scheduled backups",
+      "Point-in-time recovery",
+      "Incremental backups",
+      "Data encryption",
+      "Backup monitoring dashboard",
+      "Email alerts"
+    ],
+    "target_business_size": "Small businesses",
+    "setup_fee": 100.0,
+    "cross_sell_products": [
+      "PROD000050",
+      "PROD000060"
+    ],
+    "upsell_products": [
+      "PROD000034"
+    ]
+  },
+  {
+    "product_id": "PROD000034",
+    "name": "Cloud Backup Service - Professional",
+    "category": "Cloud",
+    "subcategory": "Backup",
+    "description": "Automated cloud backup solution with 2000GB capacity for 20 servers. Designed for Medium businesses. Includes point-in-time recovery and encryption.",
+    "pricing_tiers": {
+      "monthly": 450,
+      "annual": 4500
+    },
+    "capacity": "2000GB, 20 servers",
+    "sla_uptime": 99.9,
+    "features": [
+      "2000GB backup storage",
+      "Support for 20 servers",
+      "Automated scheduled backups",
+      "Point-in-time recovery",
+      "Incremental backups",
+      "Data encryption",
+      "Backup monitoring dashboard",
+      "Email alerts"
+    ],
+    "target_business_size": "Medium businesses",
+    "setup_fee": 100.0,
+    "cross_sell_products": [
+      "PROD000050",
+      "PROD000060"
+    ],
+    "upsell_products": [
+      "PROD000035"
+    ]
+  },
+  {
+    "product_id": "PROD000035",
+    "name": "Cloud Backup Service - Enterprise",
+    "category": "Cloud",
+    "subcategory": "Backup",
+    "description": "Automated cloud backup solution with 10000GB capacity for Unlimited servers. Designed for Large enterprises. Includes point-in-time recovery and encryption.",
+    "pricing_tiers": {
+      "monthly": 1800,
+      "annual": 18000
+    },
+    "capacity": "10000GB, Unlimited servers",
+    "sla_uptime": 99.9,
+    "features": [
+      "10000GB backup storage",
+      "Support for Unlimited servers",
+      "Automated scheduled backups",
+      "Point-in-time recovery",
+      "Incremental backups",
+      "Data encryption",
+      "Backup monitoring dashboard",
+      "Email alerts"
+    ],
+    "target_business_size": "Large enterprises",
+    "setup_fee": 100.0,
+    "cross_sell_products": [
+      "PROD000050",
+      "PROD000060"
+    ],
+    "upsell_products": []
+  },
+  {
+    "product_id": "PROD000036",
+    "name": "Managed Database - Small",
+    "category": "Cloud",
+    "subcategory": "Database",
+    "description": "Fully managed database service with 2 vCPUs and 10GB storage. Supports MySQL, PostgreSQL. Perfect for Development databases.",
+    "pricing_tiers": {
+      "monthly": 250,
+      "annual": 2500
+    },
+    "capacity": "2 vCPU, 10GB storage",
+    "sla_uptime": 99.95,
+    "features": [
+      "2 vCPUs",
+      "10GB storage",
+      "Supports: MySQL, PostgreSQL",
+      "Automated backups",
+      "Point-in-time recovery",
+      "Read replicas",
+      "Automatic failover",
+      "Performance monitoring"
+    ],
+    "target_business_size": "All business sizes",
+    "setup_fee": 50.0,
+    "cross_sell_products": [
+      "PROD000050",
+      "PROD000060"
+    ],
+    "upsell_products": [
+      "PROD000037"
+    ]
+  },
+  {
+    "product_id": "PROD000037",
+    "name": "Managed Database - Medium",
+    "category": "Cloud",
+    "subcategory": "Database",
+    "description": "Fully managed database service with 4 vCPUs and 50GB storage. Supports MySQL, PostgreSQL, MongoDB. Perfect for Production databases.",
+    "pricing_tiers": {
+      "monthly": 550,
+      "annual": 5500
+    },
+    "capacity": "4 vCPU, 50GB storage",
+    "sla_uptime": 99.95,
+    "features": [
+      "4 vCPUs",
+      "50GB storage",
+      "Supports: MySQL, PostgreSQL, MongoDB",
+      "Automated backups",
+      "Point-in-time recovery",
+      "Read replicas",
+      "Automatic failover",
+      "Performance monitoring"
+    ],
+    "target_business_size": "All business sizes",
+    "setup_fee": 50.0,
+    "cross_sell_products": [
+      "PROD000050",
+      "PROD000060"
+    ],
+    "upsell_products": [
+      "PROD000038"
+    ]
+  },
+  {
+    "product_id": "PROD000038",
+    "name": "Managed Database - Large",
+    "category": "Cloud",
+    "subcategory": "Database",
+    "description": "Fully managed database service with 8 vCPUs and 200GB storage. Supports All engines + Redis. Perfect for High-traffic applications.",
+    "pricing_tiers": {
+      "monthly": 1100,
+      "annual": 11000
+    },
+    "capacity": "8 vCPU, 200GB storage",
+    "sla_uptime": 99.95,
+    "features": [
+      "8 vCPUs",
+      "200GB storage",
+      "Supports: All engines + Redis",
+      "Automated backups",
+      "Point-in-time recovery",
+      "Read replicas",
+      "Automatic failover",
+      "Performance monitoring"
+    ],
+    "target_business_size": "All business sizes",
+    "setup_fee": 50.0,
+    "cross_sell_products": [
+      "PROD000050",
+      "PROD000060"
+    ],
+    "upsell_products": [
+      "PROD000039"
+    ]
+  },
+  {
+    "product_id": "PROD000039",
+    "name": "Managed Database - Enterprise",
+    "category": "Cloud",
+    "subcategory": "Database",
+    "description": "Fully managed database service with 16 vCPUs and 1000GB storage. Supports All engines + Oracle. Perfect for Mission-critical systems.",
+    "pricing_tiers": {
+      "monthly": 2200,
+      "annual": 22000
+    },
+    "capacity": "16 vCPU, 1000GB storage",
+    "sla_uptime": 99.95,
+    "features": [
+      "16 vCPUs",
+      "1000GB storage",
+      "Supports: All engines + Oracle",
+      "Automated backups",
+      "Point-in-time recovery",
+      "Read replicas",
+      "Automatic failover",
+      "Performance monitoring"
+    ],
+    "target_business_size": "All business sizes",
+    "setup_fee": 50.0,
+    "cross_sell_products": [
+      "PROD000050",
+      "PROD000060"
+    ],
+    "upsell_products": []
+  },
+  {
+    "product_id": "PROD000040",
+    "name": "Cloud Firewall - Basic",
+    "category": "Cloud",
+    "subcategory": "Security",
+    "description": "Next-generation firewall with 100Mbps throughput. Designed for Small businesses with basic security needs. Includes intrusion prevention and threat intelligence.",
+    "pricing_tiers": {
+      "monthly": 300,
+      "annual": 3000
+    },
+    "capacity": "100Mbps throughput",
+    "sla_uptime": 99.99,
+    "features": [
+      "100Mbps throughput",
+      "Intrusion prevention system",
+      "Application control",
+      "Threat intelligence feeds",
+      "VPN support",
+      "SSL inspection",
+      "Real-time monitoring",
+      "Security event logging"
+    ],
+    "target_business_size": "Small businesses with basic security needs",
+    "setup_fee": 200.0,
+    "cross_sell_products": [
+      "PROD000070",
+      "PROD000050"
+    ],
+    "upsell_products": [
+      "PROD000041"
+    ]
+  },
+  {
+    "product_id": "PROD000041",
+    "name": "Cloud Firewall - Advanced",
+    "category": "Cloud",
+    "subcategory": "Security",
+    "description": "Next-generation firewall with 500Mbps throughput. Designed for Medium businesses requiring enhanced protection. Includes intrusion prevention and threat intelligence.",
+    "pricing_tiers": {
+      "monthly": 600,
+      "annual": 6000
+    },
+    "capacity": "500Mbps throughput",
+    "sla_uptime": 99.99,
+    "features": [
+      "500Mbps throughput",
+      "Intrusion prevention system",
+      "Application control",
+      "Threat intelligence feeds",
+      "VPN support",
+      "SSL inspection",
+      "Real-time monitoring",
+      "Security event logging"
+    ],
+    "target_business_size": "Medium businesses requiring enhanced protection",
+    "setup_fee": 200.0,
+    "cross_sell_products": [
+      "PROD000070",
+      "PROD000050"
+    ],
+    "upsell_products": [
+      "PROD000042"
+    ]
+  },
+  {
+    "product_id": "PROD000042",
+    "name": "Cloud Firewall - Enterprise",
+    "category": "Cloud",
+    "subcategory": "Security",
+    "description": "Next-generation firewall with 1Gbps throughput. Designed for Large enterprises with complex security requirements. Includes intrusion prevention and threat intelligence.",
+    "pricing_tiers": {
+      "monthly": 1200,
+      "annual": 12000
+    },
+    "capacity": "1Gbps throughput",
+    "sla_uptime": 99.99,
+    "features": [
+      "1Gbps throughput",
+      "Intrusion prevention system",
+      "Application control",
+      "Threat intelligence feeds",
+      "VPN support",
+      "SSL inspection",
+      "Real-time monitoring",
+      "Security event logging"
+    ],
+    "target_business_size": "Large enterprises with complex security requirements",
+    "setup_fee": 200.0,
+    "cross_sell_products": [
+      "PROD000070",
+      "PROD000050"
+    ],
+    "upsell_products": [
+      "PROD000043"
+    ]
+  },
+  {
+    "product_id": "PROD000043",
+    "name": "Cloud Firewall - Premium",
+    "category": "Cloud",
+    "subcategory": "Security",
+    "description": "Next-generation firewall with 10Gbps throughput. Designed for High-traffic enterprises and data centers. Includes intrusion prevention and threat intelligence.",
+    "pricing_tiers": {
+      "monthly": 2500,
+      "annual": 25000
+    },
+    "capacity": "10Gbps throughput",
+    "sla_uptime": 99.99,
+    "features": [
+      "10Gbps throughput",
+      "Intrusion prevention system",
+      "Application control",
+      "Threat intelligence feeds",
+      "VPN support",
+      "SSL inspection",
+      "Real-time monitoring",
+      "Security event logging"
+    ],
+    "target_business_size": "High-traffic enterprises and data centers",
+    "setup_fee": 200.0,
+    "cross_sell_products": [
+      "PROD000070",
+      "PROD000050"
+    ],
+    "upsell_products": []
+  },
+  {
+    "product_id": "PROD000044",
+    "name": "DDoS Protection - Standard",
+    "category": "Cloud",
+    "subcategory": "Security",
+    "description": "Standard DDoS protection with 10Gbps mitigation capacity. Always-on protection with automatic attack detection and mitigation.",
+    "pricing_tiers": {
+      "monthly": 350,
+      "annual": 3500
+    },
+    "capacity": "10Gbps mitigation",
+    "sla_uptime": 99.99,
+    "features": [
+      "10Gbps mitigation capacity",
+      "Always-on traffic monitoring",
+      "Automatic attack detection",
+      "Instant mitigation",
+      "Layer 3/4/7 protection",
+      "Real-time alerts",
+      "Attack analytics",
+      "24/7 security operations center"
+    ],
+    "target_business_size": "All business sizes",
+    "setup_fee": 500.0,
+    "cross_sell_products": [
+      "PROD000070",
+      "PROD000050"
+    ],
+    "upsell_products": [
+      "PROD000045"
+    ]
+  },
+  {
+    "product_id": "PROD000045",
+    "name": "DDoS Protection - Advanced",
+    "category": "Cloud",
+    "subcategory": "Security",
+    "description": "Advanced threat mitigation with 50Gbps mitigation capacity. Always-on protection with automatic attack detection and mitigation.",
+    "pricing_tiers": {
+      "monthly": 800,
+      "annual": 8000
+    },
+    "capacity": "50Gbps mitigation",
+    "sla_uptime": 99.99,
+    "features": [
+      "50Gbps mitigation capacity",
+      "Always-on traffic monitoring",
+      "Automatic attack detection",
+      "Instant mitigation",
+      "Layer 3/4/7 protection",
+      "Real-time alerts",
+      "Attack analytics",
+      "24/7 security operations center"
+    ],
+    "target_business_size": "All business sizes",
+    "setup_fee": 500.0,
+    "cross_sell_products": [
+      "PROD000070",
+      "PROD000050"
+    ],
+    "upsell_products": [
+      "PROD000046"
+    ]
+  },
+  {
+    "product_id": "PROD000046",
+    "name": "DDoS Protection - Enterprise",
+    "category": "Cloud",
+    "subcategory": "Security",
+    "description": "Enterprise-grade protection with 100Gbps mitigation capacity. Always-on protection with automatic attack detection and mitigation.",
+    "pricing_tiers": {
+      "monthly": 1800,
+      "annual": 18000
+    },
+    "capacity": "100Gbps mitigation",
+    "sla_uptime": 99.99,
+    "features": [
+      "100Gbps mitigation capacity",
+      "Always-on traffic monitoring",
+      "Automatic attack detection",
+      "Instant mitigation",
+      "Layer 3/4/7 protection",
+      "Real-time alerts",
+      "Attack analytics",
+      "24/7 security operations center"
+    ],
+    "target_business_size": "All business sizes",
+    "setup_fee": 500.0,
+    "cross_sell_products": [
+      "PROD000070",
+      "PROD000050"
+    ],
+    "upsell_products": [
+      "PROD000047"
+    ]
+  },
+  {
+    "product_id": "PROD000047",
+    "name": "DDoS Protection - Ultimate",
+    "category": "Cloud",
+    "subcategory": "Security",
+    "description": "Ultimate DDoS defense with Unlimited mitigation capacity. Always-on protection with automatic attack detection and mitigation.",
+    "pricing_tiers": {
+      "monthly": 3500,
+      "annual": 35000
+    },
+    "capacity": "Unlimited mitigation",
+    "sla_uptime": 99.99,
+    "features": [
+      "Unlimited mitigation capacity",
+      "Always-on traffic monitoring",
+      "Automatic attack detection",
+      "Instant mitigation",
+      "Layer 3/4/7 protection",
+      "Real-time alerts",
+      "Attack analytics",
+      "24/7 security operations center"
+    ],
+    "target_business_size": "All business sizes",
+    "setup_fee": 500.0,
+    "cross_sell_products": [
+      "PROD000070",
+      "PROD000050"
+    ],
+    "upsell_products": []
+  },
+  {
+    "product_id": "PROD000048",
+    "name": "IoT Connectivity Plan - Starter",
+    "category": "IoT",
+    "subcategory": "Connectivity",
+    "description": "IoT connectivity for Small IoT deployments. Supports up to 50 devices with 100MB total monthly data. Includes M2M SIM cards and management platform.",
+    "pricing_tiers": {
+      "monthly": 180,
+      "annual": 1800
+    },
+    "capacity": "50 devices, 100MB data",
+    "sla_uptime": 99.9,
+    "features": [
+      "Up to 50 IoT devices",
+      "100MB total monthly data",
+      "M2M SIM cards included",
+      "IoT management platform",
+      "Real-time device monitoring",
+      "API access",
+      "Data usage alerts",
+      "Multi-network support"
+    ],
+    "target_business_size": "All business sizes",
+    "setup_fee": 250.0,
+    "cross_sell_products": [
+      "PROD000090",
+      "PROD000095"
+    ],
+    "upsell_products": [
+      "PROD000049"
+    ]
+  },
+  {
+    "product_id": "PROD000049",
+    "name": "IoT Connectivity Plan - Growth",
+    "category": "IoT",
+    "subcategory": "Connectivity",
+    "description": "IoT connectivity for Growing IoT projects. Supports up to 250 devices with 500MB total monthly data. Includes M2M SIM cards and management platform.",
+    "pricing_tiers": {
+      "monthly": 750,
+      "annual": 7500
+    },
+    "capacity": "250 devices, 500MB data",
+    "sla_uptime": 99.9,
+    "features": [
+      "Up to 250 IoT devices",
+      "500MB total monthly data",
+      "M2M SIM cards included",
+      "IoT management platform",
+      "Real-time device monitoring",
+      "API access",
+      "Data usage alerts",
+      "Multi-network support"
+    ],
+    "target_business_size": "All business sizes",
+    "setup_fee": 250.0,
+    "cross_sell_products": [
+      "PROD000090",
+      "PROD000095"
+    ],
+    "upsell_products": [
+      "PROD000050"
+    ]
+  },
+  {
+    "product_id": "PROD000050",
+    "name": "IoT Connectivity Plan - Business",
+    "category": "IoT",
+    "subcategory": "Connectivity",
+    "description": "IoT connectivity for Business-scale IoT. Supports up to 1000 devices with 2000MB total monthly data. Includes M2M SIM cards and management platform.",
+    "pricing_tiers": {
+      "monthly": 2500,
+      "annual": 25000
+    },
+    "capacity": "1000 devices, 2000MB data",
+    "sla_uptime": 99.9,
+    "features": [
+      "Up to 1000 IoT devices",
+      "2000MB total monthly data",
+      "M2M SIM cards included",
+      "IoT management platform",
+      "Real-time device monitoring",
+      "API access",
+      "Data usage alerts",
+      "Multi-network support"
+    ],
+    "target_business_size": "All business sizes",
+    "setup_fee": 250.0,
+    "cross_sell_products": [
+      "PROD000090",
+      "PROD000095"
+    ],
+    "upsell_products": [
+      "PROD000051"
+    ]
+  },
+  {
+    "product_id": "PROD000051",
+    "name": "IoT Connectivity Plan - Enterprise",
+    "category": "IoT",
+    "subcategory": "Connectivity",
+    "description": "IoT connectivity for Large-scale IoT deployments. Supports up to 5000 devices with 10000MB total monthly data. Includes M2M SIM cards and management platform.",
+    "pricing_tiers": {
+      "monthly": 10000,
+      "annual": 100000
+    },
+    "capacity": "5000 devices, 10000MB data",
+    "sla_uptime": 99.9,
+    "features": [
+      "Up to 5000 IoT devices",
+      "10000MB total monthly data",
+      "M2M SIM cards included",
+      "IoT management platform",
+      "Real-time device monitoring",
+      "API access",
+      "Data usage alerts",
+      "Multi-network support"
+    ],
+    "target_business_size": "All business sizes",
+    "setup_fee": 250.0,
+    "cross_sell_products": [
+      "PROD000090",
+      "PROD000095"
+    ],
+    "upsell_products": [
+      "PROD000052"
+    ]
+  },
+  {
+    "product_id": "PROD000052",
+    "name": "IoT Connectivity Plan - Industrial",
+    "category": "IoT",
+    "subcategory": "Connectivity",
+    "description": "IoT connectivity for Industrial IoT at scale. Supports up to 10000 devices with 50000MB total monthly data. Includes M2M SIM cards and management platform.",
+    "pricing_tiers": {
+      "monthly": 18000,
+      "annual": 180000
+    },
+    "capacity": "10000 devices, 50000MB data",
+    "sla_uptime": 99.9,
+    "features": [
+      "Up to 10000 IoT devices",
+      "50000MB total monthly data",
+      "M2M SIM cards included",
+      "IoT management platform",
+      "Real-time device monitoring",
+      "API access",
+      "Data usage alerts",
+      "Multi-network support"
+    ],
+    "target_business_size": "All business sizes",
+    "setup_fee": 250.0,
+    "cross_sell_products": [
+      "PROD000090",
+      "PROD000095"
+    ],
+    "upsell_products": []
+  },
+  {
+    "product_id": "PROD000053",
+    "name": "Fleet Tracking System - Small",
+    "category": "IoT",
+    "subcategory": "Fleet Management",
+    "description": "Comprehensive fleet tracking solution for Small fleet operations. Supports up to 10 vehicles with real-time GPS tracking, route optimization, and driver behavior monitoring.",
+    "pricing_tiers": {
+      "monthly": 400,
+      "annual": 4000
+    },
+    "capacity": "10 vehicles",
+    "sla_uptime": 99.9,
+    "features": [
+      "Up to 10 vehicles",
+      "Real-time GPS tracking",
+      "Route optimization",
+      "Geofencing",
+      "Driver behavior monitoring",
+      "Maintenance scheduling",
+      "Fuel monitoring",
+      "Mobile app access"
+    ],
+    "target_business_size": "Small fleet operations",
+    "setup_fee": 300.0,
+    "cross_sell_products": [
+      "PROD000080",
+      "PROD000050"
+    ],
+    "upsell_products": [
+      "PROD000054"
+    ]
+  },
+  {
+    "product_id": "PROD000054",
+    "name": "Fleet Tracking System - Medium",
+    "category": "IoT",
+    "subcategory": "Fleet Management",
+    "description": "Comprehensive fleet tracking solution for Medium-sized fleets. Supports up to 50 vehicles with real-time GPS tracking, route optimization, and driver behavior monitoring.",
+    "pricing_tiers": {
+      "monthly": 1500,
+      "annual": 15000
+    },
+    "capacity": "50 vehicles",
+    "sla_uptime": 99.9,
+    "features": [
+      "Up to 50 vehicles",
+      "Real-time GPS tracking",
+      "Route optimization",
+      "Geofencing",
+      "Driver behavior monitoring",
+      "Maintenance scheduling",
+      "Fuel monitoring",
+      "Mobile app access"
+    ],
+    "target_business_size": "Medium-sized fleets",
+    "setup_fee": 300.0,
+    "cross_sell_products": [
+      "PROD000080",
+      "PROD000050"
+    ],
+    "upsell_products": [
+      "PROD000055"
+    ]
+  },
+  {
+    "product_id": "PROD000055",
+    "name": "Fleet Tracking System - Large",
+    "category": "IoT",
+    "subcategory": "Fleet Management",
+    "description": "Comprehensive fleet tracking solution for Large fleet management. Supports up to 200 vehicles with real-time GPS tracking, route optimization, and driver behavior monitoring.",
+    "pricing_tiers": {
+      "monthly": 5000,
+      "annual": 50000
+    },
+    "capacity": "200 vehicles",
+    "sla_uptime": 99.9,
+    "features": [
+      "Up to 200 vehicles",
+      "Real-time GPS tracking",
+      "Route optimization",
+      "Geofencing",
+      "Driver behavior monitoring",
+      "Maintenance scheduling",
+      "Fuel monitoring",
+      "Mobile app access"
+    ],
+    "target_business_size": "Large fleet management",
+    "setup_fee": 300.0,
+    "cross_sell_products": [
+      "PROD000080",
+      "PROD000050"
+    ],
+    "upsell_products": [
+      "PROD000056"
+    ]
+  },
+  {
+    "product_id": "PROD000056",
+    "name": "Fleet Tracking System - Enterprise",
+    "category": "IoT",
+    "subcategory": "Fleet Management",
+    "description": "Comprehensive fleet tracking solution for Enterprise fleet solutions. Supports up to 1000 vehicles with real-time GPS tracking, route optimization, and driver behavior monitoring.",
+    "pricing_tiers": {
+      "monthly": 20000,
+      "annual": 200000
+    },
+    "capacity": "1000 vehicles",
+    "sla_uptime": 99.9,
+    "features": [
+      "Up to 1000 vehicles",
+      "Real-time GPS tracking",
+      "Route optimization",
+      "Geofencing",
+      "Driver behavior monitoring",
+      "Maintenance scheduling",
+      "Fuel monitoring",
+      "Mobile app access"
+    ],
+    "target_business_size": "Enterprise fleet solutions",
+    "setup_fee": 300.0,
+    "cross_sell_products": [
+      "PROD000080",
+      "PROD000050"
+    ],
+    "upsell_products": []
+  },
+  {
+    "product_id": "PROD000057",
+    "name": "Smart Meter Solution - Basic",
+    "category": "IoT",
+    "subcategory": "Smart Metering",
+    "description": "Basic metering with support for 100 smart meters. Includes real-time monitoring, automated billing, and energy analytics.",
+    "pricing_tiers": {
+      "monthly": 500,
+      "annual": 5000
+    },
+    "capacity": "100 meters",
+    "sla_uptime": 99.95,
+    "features": [
+      "Up to 100 smart meters",
+      "Real-time energy monitoring",
+      "Automated meter reading",
+      "Billing integration",
+      "Energy consumption analytics",
+      "Demand forecasting",
+      "Outage detection",
+      "Tamper alerts"
+    ],
+    "target_business_size": "Medium to large enterprises",
+    "setup_fee": 1000.0,
+    "cross_sell_products": [
+      "PROD000080",
+      "PROD000060"
+    ],
+    "upsell_products": [
+      "PROD000058"
+    ]
+  },
+  {
+    "product_id": "PROD000058",
+    "name": "Smart Meter Solution - Advanced",
+    "category": "IoT",
+    "subcategory": "Smart Metering",
+    "description": "Advanced analytics with support for 500 smart meters. Includes real-time monitoring, automated billing, and energy analytics.",
+    "pricing_tiers": {
+      "monthly": 2000,
+      "annual": 20000
+    },
+    "capacity": "500 meters",
+    "sla_uptime": 99.95,
+    "features": [
+      "Up to 500 smart meters",
+      "Real-time energy monitoring",
+      "Automated meter reading",
+      "Billing integration",
+      "Energy consumption analytics",
+      "Demand forecasting",
+      "Outage detection",
+      "Tamper alerts"
+    ],
+    "target_business_size": "Medium to large enterprises",
+    "setup_fee": 1000.0,
+    "cross_sell_products": [
+      "PROD000080",
+      "PROD000060"
+    ],
+    "upsell_products": [
+      "PROD000059"
+    ]
+  },
+  {
+    "product_id": "PROD000059",
+    "name": "Smart Meter Solution - Enterprise",
+    "category": "IoT",
+    "subcategory": "Smart Metering",
+    "description": "Enterprise energy management with support for 2000 smart meters. Includes real-time monitoring, automated billing, and energy analytics.",
+    "pricing_tiers": {
+      "monthly": 7000,
+      "annual": 70000
+    },
+    "capacity": "2000 meters",
+    "sla_uptime": 99.95,
+    "features": [
+      "Up to 2000 smart meters",
+      "Real-time energy monitoring",
+      "Automated meter reading",
+      "Billing integration",
+      "Energy consumption analytics",
+      "Demand forecasting",
+      "Outage detection",
+      "Tamper alerts"
+    ],
+    "target_business_size": "Medium to large enterprises",
+    "setup_fee": 1000.0,
+    "cross_sell_products": [
+      "PROD000080",
+      "PROD000060"
+    ],
+    "upsell_products": [
+      "PROD000060"
+    ]
+  },
+  {
+    "product_id": "PROD000060",
+    "name": "Smart Meter Solution - Utility",
+    "category": "IoT",
+    "subcategory": "Smart Metering",
+    "description": "Utility-scale deployment with support for 10000 smart meters. Includes real-time monitoring, automated billing, and energy analytics.",
+    "pricing_tiers": {
+      "monthly": 30000,
+      "annual": 300000
+    },
+    "capacity": "10000 meters",
+    "sla_uptime": 99.95,
+    "features": [
+      "Up to 10000 smart meters",
+      "Real-time energy monitoring",
+      "Automated meter reading",
+      "Billing integration",
+      "Energy consumption analytics",
+      "Demand forecasting",
+      "Outage detection",
+      "Tamper alerts"
+    ],
+    "target_business_size": "Medium to large enterprises",
+    "setup_fee": 1000.0,
+    "cross_sell_products": [
+      "PROD000080",
+      "PROD000060"
+    ],
+    "upsell_products": []
+  },
+  {
+    "product_id": "PROD000061",
+    "name": "Asset Monitoring Solution - Basic",
+    "category": "IoT",
+    "subcategory": "Asset Management",
+    "description": "Basic asset tracking for up to 50 assets. Includes location tracking, condition monitoring, and predictive maintenance capabilities.",
+    "pricing_tiers": {
+      "monthly": 300,
+      "annual": 3000
+    },
+    "capacity": "50 assets",
+    "sla_uptime": 99.9,
+    "features": [
+      "Up to 50 assets",
+      "Real-time location tracking",
+      "Condition monitoring",
+      "Temperature sensors",
+      "Vibration monitoring",
+      "Predictive maintenance",
+      "Asset utilization reports",
+      "Mobile app access"
+    ],
+    "target_business_size": "All business sizes",
+    "setup_fee": 400.0,
+    "cross_sell_products": [
+      "PROD000080",
+      "PROD000090"
+    ],
+    "upsell_products": [
+      "PROD000062"
+    ]
+  },
+  {
+    "product_id": "PROD000062",
+    "name": "Asset Monitoring Solution - Professional",
+    "category": "IoT",
+    "subcategory": "Asset Management",
+    "description": "Professional asset management for up to 200 assets. Includes location tracking, condition monitoring, and predictive maintenance capabilities.",
+    "pricing_tiers": {
+      "monthly": 900,
+      "annual": 9000
+    },
+    "capacity": "200 assets",
+    "sla_uptime": 99.9,
+    "features": [
+      "Up to 200 assets",
+      "Real-time location tracking",
+      "Condition monitoring",
+      "Temperature sensors",
+      "Vibration monitoring",
+      "Predictive maintenance",
+      "Asset utilization reports",
+      "Mobile app access"
+    ],
+    "target_business_size": "All business sizes",
+    "setup_fee": 400.0,
+    "cross_sell_products": [
+      "PROD000080",
+      "PROD000090"
+    ],
+    "upsell_products": [
+      "PROD000063"
+    ]
+  },
+  {
+    "product_id": "PROD000063",
+    "name": "Asset Monitoring Solution - Enterprise",
+    "category": "IoT",
+    "subcategory": "Asset Management",
+    "description": "Enterprise asset solutions for up to 1000 assets. Includes location tracking, condition monitoring, and predictive maintenance capabilities.",
+    "pricing_tiers": {
+      "monthly": 3500,
+      "annual": 35000
+    },
+    "capacity": "1000 assets",
+    "sla_uptime": 99.9,
+    "features": [
+      "Up to 1000 assets",
+      "Real-time location tracking",
+      "Condition monitoring",
+      "Temperature sensors",
+      "Vibration monitoring",
+      "Predictive maintenance",
+      "Asset utilization reports",
+      "Mobile app access"
+    ],
+    "target_business_size": "All business sizes",
+    "setup_fee": 400.0,
+    "cross_sell_products": [
+      "PROD000080",
+      "PROD000090"
+    ],
+    "upsell_products": [
+      "PROD000064"
+    ]
+  },
+  {
+    "product_id": "PROD000064",
+    "name": "Asset Monitoring Solution - Industrial",
+    "category": "IoT",
+    "subcategory": "Asset Management",
+    "description": "Industrial-scale monitoring for up to 5000 assets. Includes location tracking, condition monitoring, and predictive maintenance capabilities.",
+    "pricing_tiers": {
+      "monthly": 15000,
+      "annual": 150000
+    },
+    "capacity": "5000 assets",
+    "sla_uptime": 99.9,
+    "features": [
+      "Up to 5000 assets",
+      "Real-time location tracking",
+      "Condition monitoring",
+      "Temperature sensors",
+      "Vibration monitoring",
+      "Predictive maintenance",
+      "Asset utilization reports",
+      "Mobile app access"
+    ],
+    "target_business_size": "All business sizes",
+    "setup_fee": 400.0,
+    "cross_sell_products": [
+      "PROD000080",
+      "PROD000090"
+    ],
+    "upsell_products": []
+  },
+  {
+    "product_id": "PROD000065",
+    "name": "Unified Communications - Basic",
+    "category": "Cloud",
+    "subcategory": "Communications",
+    "description": "Cloud-based unified communications platform for Small teams. Supports up to 25 users with voice, video, messaging, and collaboration tools.",
+    "pricing_tiers": {
+      "monthly": 350,
+      "annual": 3500
+    },
+    "capacity": "25 users",
+    "sla_uptime": 99.9,
+    "features": [
+      "Up to 25 users",
+      "HD voice calling",
+      "Video conferencing",
+      "Instant messaging",
+      "Screen sharing",
+      "Mobile apps",
+      "Call recording",
+      "Integration APIs"
+    ],
+    "target_business_size": "Small teams",
+    "setup_fee": 500.0,
+    "cross_sell_products": [
+      "PROD000050",
+      "PROD000070"
+    ],
+    "upsell_products": [
+      "PROD000066"
+    ]
+  },
+  {
+    "product_id": "PROD000066",
+    "name": "Unified Communications - Professional",
+    "category": "Cloud",
+    "subcategory": "Communications",
+    "description": "Cloud-based unified communications platform for Medium businesses. Supports up to 100 users with voice, video, messaging, and collaboration tools.",
+    "pricing_tiers": {
+      "monthly": 1200,
+      "annual": 12000
+    },
+    "capacity": "100 users",
+    "sla_uptime": 99.9,
+    "features": [
+      "Up to 100 users",
+      "HD voice calling",
+      "Video conferencing",
+      "Instant messaging",
+      "Screen sharing",
+      "Mobile apps",
+      "Call recording",
+      "Integration APIs"
+    ],
+    "target_business_size": "Medium businesses",
+    "setup_fee": 500.0,
+    "cross_sell_products": [
+      "PROD000050",
+      "PROD000070"
+    ],
+    "upsell_products": [
+      "PROD000067"
+    ]
+  },
+  {
+    "product_id": "PROD000067",
+    "name": "Unified Communications - Enterprise",
+    "category": "Cloud",
+    "subcategory": "Communications",
+    "description": "Cloud-based unified communications platform for Large organizations. Supports up to 500 users with voice, video, messaging, and collaboration tools.",
+    "pricing_tiers": {
+      "monthly": 5000,
+      "annual": 50000
+    },
+    "capacity": "500 users",
+    "sla_uptime": 99.9,
+    "features": [
+      "Up to 500 users",
+      "HD voice calling",
+      "Video conferencing",
+      "Instant messaging",
+      "Screen sharing",
+      "Mobile apps",
+      "Call recording",
+      "Integration APIs"
+    ],
+    "target_business_size": "Large organizations",
+    "setup_fee": 500.0,
+    "cross_sell_products": [
+      "PROD000050",
+      "PROD000070"
+    ],
+    "upsell_products": [
+      "PROD000068"
+    ]
+  },
+  {
+    "product_id": "PROD000068",
+    "name": "Unified Communications - Ultimate",
+    "category": "Cloud",
+    "subcategory": "Communications",
+    "description": "Cloud-based unified communications platform for Enterprise-wide deployment. Supports up to 2000 users with voice, video, messaging, and collaboration tools.",
+    "pricing_tiers": {
+      "monthly": 18000,
+      "annual": 180000
+    },
+    "capacity": "2000 users",
+    "sla_uptime": 99.9,
+    "features": [
+      "Up to 2000 users",
+      "HD voice calling",
+      "Video conferencing",
+      "Instant messaging",
+      "Screen sharing",
+      "Mobile apps",
+      "Call recording",
+      "Integration APIs"
+    ],
+    "target_business_size": "Enterprise-wide deployment",
+    "setup_fee": 500.0,
+    "cross_sell_products": [
+      "PROD000050",
+      "PROD000070"
+    ],
+    "upsell_products": []
+  },
+  {
+    "product_id": "PROD000069",
+    "name": "Managed Services - Basic IT Support",
+    "category": "Professional Services",
+    "subcategory": "Managed Services",
+    "description": "Basic IT management with 8x5 support. Includes proactive monitoring, patch management, and incident response.",
+    "pricing_tiers": {
+      "monthly": 800,
+      "annual": 8000
+    },
+    "capacity": "8x5 support",
+    "sla_uptime": 99.9,
+    "features": [
+      "8x5 support",
+      "Proactive monitoring",
+      "Patch management",
+      "Incident response",
+      "Performance optimization",
+      "Monthly reports",
+      "Dedicated account manager",
+      "Emergency support"
+    ],
+    "target_business_size": "All business sizes",
+    "setup_fee": 1000.0,
+    "cross_sell_products": [
+      "PROD000050",
+      "PROD000070"
+    ],
+    "upsell_products": []
+  },
+  {
+    "product_id": "PROD000070",
+    "name": "Managed Services - 24x7 Support",
+    "category": "Professional Services",
+    "subcategory": "Managed Services",
+    "description": "Round-the-clock IT support with 24x7 support. Includes proactive monitoring, patch management, and incident response.",
+    "pricing_tiers": {
+      "monthly": 1800,
+      "annual": 18000
+    },
+    "capacity": "24x7 support",
+    "sla_uptime": 99.9,
+    "features": [
+      "24x7 support",
+      "Proactive monitoring",
+      "Patch management",
+      "Incident response",
+      "Performance optimization",
+      "Monthly reports",
+      "Dedicated account manager",
+      "Emergency support"
+    ],
+    "target_business_size": "All business sizes",
+    "setup_fee": 1000.0,
+    "cross_sell_products": [
+      "PROD000050",
+      "PROD000070"
+    ],
+    "upsell_products": []
+  },
+  {
+    "product_id": "PROD000071",
+    "name": "Managed Services - Full Infrastructure",
+    "category": "Professional Services",
+    "subcategory": "Managed Services",
+    "description": "Full infrastructure management with Complete management. Includes proactive monitoring, patch management, and incident response.",
+    "pricing_tiers": {
+      "monthly": 4500,
+      "annual": 45000
+    },
+    "capacity": "Complete management",
+    "sla_uptime": 99.9,
+    "features": [
+      "Complete management",
+      "Proactive monitoring",
+      "Patch management",
+      "Incident response",
+      "Performance optimization",
+      "Monthly reports",
+      "Dedicated account manager",
+      "Emergency support"
+    ],
+    "target_business_size": "All business sizes",
+    "setup_fee": 1000.0,
+    "cross_sell_products": [
+      "PROD000050",
+      "PROD000070"
+    ],
+    "upsell_products": []
+  },
+  {
+    "product_id": "PROD000072",
+    "name": "Managed Services - Managed Security",
+    "category": "Professional Services",
+    "subcategory": "Managed Services",
+    "description": "Complete IT and security management with Security + Infrastructure. Includes proactive monitoring, patch management, and incident response.",
+    "pricing_tiers": {
+      "monthly": 6000,
+      "annual": 60000
+    },
+    "capacity": "Security + Infrastructure",
+    "sla_uptime": 99.9,
+    "features": [
+      "Security + Infrastructure",
+      "Proactive monitoring",
+      "Patch management",
+      "Incident response",
+      "Performance optimization",
+      "Monthly reports",
+      "Dedicated account manager",
+      "Emergency support"
+    ],
+    "target_business_size": "All business sizes",
+    "setup_fee": 1000.0,
+    "cross_sell_products": [
+      "PROD000050",
+      "PROD000070"
+    ],
+    "upsell_products": []
+  }
+]
