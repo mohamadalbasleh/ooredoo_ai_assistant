@@ -56,9 +56,9 @@ export default function Chat() {
         <div className="header-content">
           <div className="logo-section">
             <div className="ooredoo-logo">
-              <svg width="32" height="32" viewBox="0 0 40 40" fill="none">
-                <circle cx="20" cy="20" r="18" fill="#E60000"/>
-                <path d="M20 10C14.48 10 10 14.48 10 20C10 25.52 14.48 30 20 30C25.52 30 30 25.52 30 20C30 14.48 25.52 10 20 10ZM20 26C16.69 26 14 23.31 14 20C14 16.69 16.69 14 20 14C23.31 14 26 16.69 26 20C26 23.31 23.31 26 20 26Z" fill="white"/>
+              <svg viewBox="0 0 100 100" fill="none">
+                <circle cx="30" cy="50" r="18" fill="none" stroke="#E60000" strokeWidth="6"/>
+                <circle cx="70" cy="50" r="18" fill="none" stroke="#E60000" strokeWidth="6"/>
               </svg>
             </div>
             <div className="header-text">
@@ -101,9 +101,9 @@ export default function Chat() {
                 <div className="user-avatar">👤</div>
               ) : (
                 <div className="assistant-avatar">
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
-                    <circle cx="12" cy="12" r="10" fill="#E60000"/>
-                    <path d="M12 6C8.69 6 6 8.69 6 12C6 15.31 8.69 18 12 18C15.31 18 18 15.31 18 12C18 8.69 15.31 6 12 6ZM12 15C10.34 15 9 13.66 9 12C9 10.34 10.34 9 12 9C13.66 9 15 10.34 15 12C15 13.66 13.66 15 12 15Z" fill="white"/>
+                  <svg viewBox="0 0 100 100" fill="none">
+                    <circle cx="30" cy="50" r="14" fill="none" stroke="white" strokeWidth="5"/>
+                    <circle cx="70" cy="50" r="14" fill="none" stroke="white" strokeWidth="5"/>
                   </svg>
                 </div>
               )}
@@ -123,9 +123,9 @@ export default function Chat() {
           <div className="message assistant">
             <div className="message-avatar">
               <div className="assistant-avatar">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
-                  <circle cx="12" cy="12" r="10" fill="#E60000"/>
-                  <path d="M12 6C8.69 6 6 8.69 6 12C6 15.31 8.69 18 12 18C15.31 18 18 15.31 18 12C18 8.69 15.31 6 12 6ZM12 15C10.34 15 9 13.66 9 12C9 10.34 10.34 9 12 9C13.66 9 15 10.34 15 12C15 13.66 13.66 15 12 15Z" fill="white"/>
+                <svg viewBox="0 0 100 100" fill="none">
+                  <circle cx="30" cy="50" r="14" fill="none" stroke="white" strokeWidth="5"/>
+                  <circle cx="70" cy="50" r="14" fill="none" stroke="white" strokeWidth="5"/>
                 </svg>
               </div>
             </div>
