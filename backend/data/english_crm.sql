@@ -3,8 +3,8 @@
 -- Contains 100+ business customer records
 
 -- Create database schema
--- Removed CREATE DATABASE
--- Removed USE
+-- Removed MySQL directive: CREATE DATABASE ooredoo_crm_en;
+-- Removed MySQL directive: USE ooredoo_crm_en;
 
 -- Customers table
 CREATE TABLE IF NOT EXISTS customers (
@@ -13,11 +13,11 @@ CREATE TABLE IF NOT EXISTS customers (
     industry_sector TEXT(50) NOT NULL,
     service_tier TEXT(20) NOT NULL,
     sla_level TEXT(20) NOT NULL,
-    registration_date DATE NOT NULL,
-    monthly_spend DECIMAL(10, 2) NOT NULL,
+    registration_date TEXT NOT NULL,
+    monthly_spend REAL(10, 2) NOT NULL,
     account_manager TEXT(100),
     payment_history TEXT(20),
-    credit_limit DECIMAL(10, 2),
+    credit_limit REAL(10, 2),
     company_size TEXT(20),
     address TEXT,
     city TEXT(50),
@@ -144,9 +144,9 @@ CREATE TABLE IF NOT EXISTS service_subscriptions (
     service_type TEXT(50) NOT NULL,
     service_name TEXT(100) NOT NULL,
     bandwidth_speed TEXT(20),
-    monthly_fee DECIMAL(10, 2) NOT NULL,
-    activation_date DATE NOT NULL,
-    contract_term_months INTEGER,
+    monthly_fee REAL(10, 2) NOT NULL,
+    activation_date TEXT NOT NULL,
+    contract_term_months INT,
     auto_renewal BOOLEAN,
     status TEXT(20),
     FOREIGN KEY (customer_id) REFERENCES customers(customer_id)
@@ -308,26 +308,16 @@ CREATE TABLE IF NOT EXISTS contracts (
     contract_id TEXT(20) PRIMARY KEY,
     customer_id TEXT(20) NOT NULL,
     contract_type TEXT(50) NOT NULL,
-    start_date DATE NOT NULL,
-    end_date DATE NOT NULL,
-    total_value DECIMAL(12, 2) NOT NULL,
+    start_date TEXT NOT NULL,
+    end_date TEXT NOT NULL,
+    total_value REAL(12, 2) NOT NULL,
     billing_cycle TEXT(20),
     payment_terms TEXT(50),
-    sla_uptime_guarantee DECIMAL(5, 2),
+    sla_uptime_guarantee REAL(5, 2),
     penalty_clause TEXT,
     signed_by TEXT(100),
     status TEXT(20),
     FOREIGN KEY (customer_id) REFERENCES customers(customer_id)
-);
-
-
-CREATE TABLE contracts (
-  contract_id TEXT PRIMARY KEY,
-  customer_id TEXT,
-  product_id TEXT,
-  start_date TEXT,
-  end_date TEXT,
-  status TEXT
 );
 
 INSERT INTO contracts VALUES ('CNT000001', 'SME000001', 'Standard Service Agreement', '2022-04-25', '2023-04-25', 246879.91, 'Quarterly', 'Net 60', 99.5, 'Service credits apply for downtime exceeding SLA', 'Contract Manager', 'Active');
@@ -642,14 +632,14 @@ CREATE TABLE IF NOT EXISTS service_usage (
     usage_id TEXT(20) PRIMARY KEY,
     customer_id TEXT(20) NOT NULL,
     month_year TEXT(7) NOT NULL,
-    bandwidth_usage_gb DECIMAL(10, 2),
-    cloud_compute_hours DECIMAL(10, 2),
-    cloud_storage_gb DECIMAL(10, 2),
-    iot_device_count INTEGER,
-    iot_data_usage_mb DECIMAL(10, 2),
-    api_calls INTEGER,
-    support_tickets_count INTEGER,
-    total_charges DECIMAL(10, 2),
+    bandwidth_usage_gb REAL(10, 2),
+    cloud_compute_hours REAL(10, 2),
+    cloud_storage_gb REAL(10, 2),
+    iot_device_count INT,
+    iot_data_usage_mb REAL(10, 2),
+    api_calls INT,
+    support_tickets_count INT,
+    total_charges REAL(10, 2),
     FOREIGN KEY (customer_id) REFERENCES customers(customer_id)
 );
 
