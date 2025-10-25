@@ -5,7 +5,6 @@ const cors = require('cors');
 const { initDb, getCustomerById, getTicketsForCustomer, searchFaqs, recommendForCustomer } = require('./services/data');
 const { ollamaChat, checkOllamaHealth } = require('./services/ollama');
 
-
 const app = express();
 app.use(cors());
 app.use(express.json());
