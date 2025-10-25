@@ -5,6 +5,9 @@
 title Ooredoo AI Assistant Installer
 color 0B
 
+:: Change to the script's directory
+cd /d "%~dp0"
+
 echo =======================================
 echo   Ooredoo AI Assistant Installer
 echo =======================================
