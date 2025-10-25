@@ -11,10 +11,11 @@ const ollama = new Ollama({
   host: process.env.OLLAMA_HOST || 'http://127.0.0.1:11434'
 });
 
-// Model configuration - using llama3.2 for best speed
+// Model configuration - OPTIMIZED FOR SPEED
 const MODEL_NAME = process.env.OLLAMA_MODEL || 'llama3.2';
-const MAX_TOKENS = 150; // Reduced for faster responses
-const TEMPERATURE = 0.2; // Lower for more consistent responses
+const MAX_TOKENS = 80; // Reduced to 80 for even faster responses
+const TEMPERATURE = 0.1; // Lower for faster, more deterministic responses
+const CONTEXT_SIZE = 1024; // Even smaller context window (was 2048)
 
 // In-memory data cache - ALL data files loaded into context
 let arabicCRMContext = '';
@@ -115,52 +116,21 @@ function detectLanguage(text) {
 }
 
 /**
- * Build system prompt with ALL available data context
+ * Build system prompt with minimal context for SPEED
  * @param {string} language - 'ar' or 'en'
- * @returns {string} - System prompt with data context
+ * @returns {string} - Compact system prompt
  */
 function buildSystemPrompt(language) {
   if (language === 'ar') {
-    let prompt = `أنت مساعد أوريدو للشركات في قطر. أجب بإيجاز ووضوح بالعربية.
+    // Minimal Arabic prompt - NO data context for speed
+    return `أنت مساعد أوريدو للشركات في قطر. أجب بإيجاز وبشكل مباشر.
 
-لديك معلومات عن:
-- خدمات أوريدو للشركات (إنترنت، سحابة، أمن سيبراني، مكالمات)
-- الأسئلة الشائعة وحلول المشاكل التقنية
-- تاريخ الشكاوى والحلول السابقة
-- بيانات العملاء الحاليين`;
-
-    // Add FAQ context if available
-    if (arabicFAQsContext) {
-      const faqSample = arabicFAQsContext.substring(0, 1000); // First 1000 chars
-      prompt += `\n\nأسئلة شائعة:\n${faqSample}`;
-    }
-
-    // Add product context if available
-    if (arabicProductsContext) {
-      prompt += `\n\nمنتجات متاحة:\n${arabicProductsContext.substring(0, 800)}`;
-    }
-
-    return prompt;
+خدمات متوفرة: إنترنت فايبر، سحابة، أمن سيبراني، اتصالات صوتية، Microsoft 365.`;
   } else {
-    let prompt = `You are an Ooredoo B2B assistant in Qatar. Answer briefly and clearly in English.
+    // Minimal English prompt - NO data context for speed
+    return `You are Ooredoo B2B assistant in Qatar. Answer briefly and directly.
 
-You have access to:
-- Ooredoo business services (Internet, Cloud, Security, Voice)
-- FAQs and technical troubleshooting guides
-- Historical customer tickets and resolutions
-- Current customer database`;
-
-    // Add product context if available
-    if (englishProductsContext) {
-      prompt += `\n\nAvailable Products:\n${englishProductsContext.substring(0, 800)}`;
-    }
-
-    // Add tickets context sample
-    if (ticketsContext) {
-      prompt += `\n\nRecent Support Patterns:\n${ticketsContext.substring(0, 500)}`;
-    }
-
-    return prompt;
+Available: Fiber Internet, Cloud, Security, Voice, Microsoft 365.`;
   }
 }
 
@@ -198,7 +168,7 @@ async function ollamaChat(message, customerId = null) {
 
     console.log('[ollama] 📤 Sending message to Ollama...');
     
-    // Call Ollama API
+    // Call Ollama API with SPEED-OPTIMIZED parameters
     const response = await ollama.chat({
       model: MODEL_NAME,
       messages: [
@@ -214,10 +184,16 @@ async function ollamaChat(message, customerId = null) {
       options: {
         temperature: TEMPERATURE,
         num_predict: MAX_TOKENS,
-        top_p: 0.9,
-        top_k: 40
+        num_ctx: CONTEXT_SIZE, // Smaller context = faster
+        top_p: 0.7, // Reduced from 0.9 for speed
+        top_k: 20,  // Reduced from 40 for speed
+        repeat_penalty: 1.1,
+        num_thread: 4, // Use 4 threads for parallel processing
+        num_gpu: 1, // Use GPU if available (fallback to CPU)
+        num_batch: 512 // Batch size for faster processing
       },
-      stream: false
+      stream: false,
+      keep_alive: '10m' // Keep model in memory longer
     });
 
     const reply = response.message?.content || null;
