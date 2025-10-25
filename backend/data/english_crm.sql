@@ -2,10 +2,9 @@
 -- Generated for SME AI Assistant Training
 -- Contains 100+ business customer records
 
-
 -- Create database schema
--- CREATE DATABASE IF NOT EXISTS ooredoo_crm_en;
--- USE ooredoo_crm_en;
+-- Removed CREATE DATABASE
+-- Removed USE
 
 -- Customers table
 CREATE TABLE IF NOT EXISTS customers (
@@ -147,7 +146,7 @@ CREATE TABLE IF NOT EXISTS service_subscriptions (
     bandwidth_speed TEXT(20),
     monthly_fee DECIMAL(10, 2) NOT NULL,
     activation_date DATE NOT NULL,
-    contract_term_months INT,
+    contract_term_months INTEGER,
     auto_renewal BOOLEAN,
     status TEXT(20),
     FOREIGN KEY (customer_id) REFERENCES customers(customer_id)
@@ -319,6 +318,16 @@ CREATE TABLE IF NOT EXISTS contracts (
     signed_by TEXT(100),
     status TEXT(20),
     FOREIGN KEY (customer_id) REFERENCES customers(customer_id)
+);
+
+
+CREATE TABLE contracts (
+  contract_id TEXT PRIMARY KEY,
+  customer_id TEXT,
+  product_id TEXT,
+  start_date TEXT,
+  end_date TEXT,
+  status TEXT
 );
 
 INSERT INTO contracts VALUES ('CNT000001', 'SME000001', 'Standard Service Agreement', '2022-04-25', '2023-04-25', 246879.91, 'Quarterly', 'Net 60', 99.5, 'Service credits apply for downtime exceeding SLA', 'Contract Manager', 'Active');
@@ -636,10 +645,10 @@ CREATE TABLE IF NOT EXISTS service_usage (
     bandwidth_usage_gb DECIMAL(10, 2),
     cloud_compute_hours DECIMAL(10, 2),
     cloud_storage_gb DECIMAL(10, 2),
-    iot_device_count INT,
+    iot_device_count INTEGER,
     iot_data_usage_mb DECIMAL(10, 2),
-    api_calls INT,
-    support_tickets_count INT,
+    api_calls INTEGER,
+    support_tickets_count INTEGER,
     total_charges DECIMAL(10, 2),
     FOREIGN KEY (customer_id) REFERENCES customers(customer_id)
 );
@@ -844,4 +853,3 @@ INSERT INTO service_usage VALUES ('USG000197', 'SME000087', '2024-10', 1345.56, 
 INSERT INTO service_usage VALUES ('USG000198', 'SME000088', '2024-09', 647.36, 523.83, 288.65, 182, 5225.23, 50427, 3, 3259.82);
 INSERT INTO service_usage VALUES ('USG000199', 'SME000089', '2024-02', 1474.53, 873.3, 1188.23, 368, 48969.51, 14047, 7, 5475.08);
 INSERT INTO service_usage VALUES ('USG000200', 'SME000090', '2024-07', 4725.27, 155.32, 516.55, 175, 11538.96, 87667, 4, 2028.96);
-
