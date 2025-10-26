@@ -6,11 +6,11 @@ import Chat from './pages/Chat';
 export default function App() {
   return (
     <BrowserRouter>
-      <header style={{ background: '#e60000', color: '#fff', padding: 12 }}>
+      <header style={{ background: '#e60000', color: '#fff', padding: 12, display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
         <h1>OoredooNova</h1>
-        <nav>
+        {/* <nav>
           <Link to="/" style={{ color: '#fff', marginRight: 10 }}>Chat</Link>
-        </nav>
+        </nav> */}
       </header>
       <main style={{ padding: 20 }}>
         <Routes>
