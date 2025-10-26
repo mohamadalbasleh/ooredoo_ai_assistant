@@ -285,7 +285,7 @@ export default function Chat() {
           </button>
         </div>
         <div className="input-footer">
-          <span className="powered-by">Powered by Ollama AI • Llama 3.2</span>
+          <span className="powered-by">Powered by Ollama AI • Llama 3.1 (8B)</span>
         </div>
       </div>
     </div>

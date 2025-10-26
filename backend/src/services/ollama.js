@@ -11,11 +11,11 @@ const ollama = new Ollama({
   host: process.env.OLLAMA_HOST || 'http://127.0.0.1:11434'
 });
 
-// Model configuration - OPTIMIZED FOR COMPLETE DATA LOADING
-const MODEL_NAME = process.env.OLLAMA_MODEL || 'llama3.2';
-const MAX_TOKENS = 500; // Increased to 500 to list all 15 FAQ questions
-const TEMPERATURE = 0.1; // Lower for faster, more deterministic responses
-const CONTEXT_SIZE = 8192; // Increased to 8192 to handle full FAQ file + products
+// Model configuration - OPTIMIZED FOR ARABIC & ENGLISH
+const MODEL_NAME = process.env.OLLAMA_MODEL || 'llama3.1:8b';
+const MAX_TOKENS = 400; // Balanced for detailed responses
+const TEMPERATURE = 0.3; // Slightly higher for better Arabic fluency
+const CONTEXT_SIZE = 6144; // Optimized for 8B model performance
 
 // In-memory data cache - ALL data files loaded into context
 let arabicCRMContext = '';
@@ -118,31 +118,39 @@ function detectLanguage(text) {
  */
 function buildSystemPrompt(language) {
   if (language === 'ar') {
-    // Arabic prompt with relevant context
-    return `أنت مساعد أوريدو للشركات في قطر. أجب بإيجاز وبشكل مباشر.
+    // Arabic prompt with relevant context - Enhanced for better dialect understanding
+    return `أنت مساعد خدمة العملاء الذكي لأوريدو للشركات في قطر. 
+    
+تعليمات:
+- أجب بالعربية الفصحى البسيطة والواضحة
+- افهم جميع اللهجات العربية (الخليجية، المصرية، الشامية، المغاربية)
+- كن ودوداً ومحترفاً ومباشراً
+- أعط إجابات مختصرة وعملية
 
-خدمات متوفرة: إنترنت فايبر، سحابة، أمن سيبراني، اتصالات صوتية، Microsoft 365.
+الخدمات المتاحة: إنترنت فايبر، خدمات سحابية، أمن سيبراني، اتصالات صوتية، Microsoft 365
 
-تعليمات مهمة: عندما يسأل المستخدم عن الأسئلة الشائعة أو المشاكل التقنية، اعرض قائمة بجميع الأسئلة المتاحة (15 سؤال) من القسم التالي واطلب منهم اختيار واحد.
+${arabicFAQsContext ? `دليل الأسئلة الشائعة:\n${arabicFAQsContext.substring(0, 2000)}` : ''}
 
-${arabicFAQsContext ? `الأسئلة الشائعة والحلول:\n${arabicFAQsContext}` : ''}
+${arabicProductsContext ? `منتجاتنا:\n${arabicProductsContext.substring(0, 1500)}` : ''}
 
-${arabicProductsContext ? `المنتجات:\n${arabicProductsContext.substring(0, 1000)}` : ''}
-
-${ticketsContext ? `حالات سابقة:\n${ticketsContext.substring(0, 800)}` : ''}`;
+${ticketsContext ? `حلول سابقة:\n${ticketsContext.substring(0, 1000)}` : ''}`;
   } else {
     // English prompt with relevant context
-    return `You are Ooredoo B2B assistant in Qatar. Answer briefly and directly.
+    return `You are Ooredoo Business customer service AI assistant in Qatar.
 
-Available: Fiber Internet, Cloud, Security, Voice, Microsoft 365.
+Instructions:
+- Answer in clear, professional English
+- Be friendly, helpful, and direct
+- Provide concise, actionable responses
+- Understand different English accents and phrasings
 
-IMPORTANT: When user asks about FAQs or common technical issues, list ALL available questions (15 total) from the following section as a numbered list and ask them to choose one.
+Available Services: Fiber Internet, Cloud Services, Cybersecurity, Voice, Microsoft 365
 
-${arabicFAQsContext ? `FAQs & Troubleshooting Guide:\n${arabicFAQsContext}` : ''}
+${arabicFAQsContext ? `FAQ & Troubleshooting:\n${arabicFAQsContext.substring(0, 2000)}` : ''}
 
-${englishProductsContext ? `Products:\n${englishProductsContext.substring(0, 1000)}` : ''}
+${englishProductsContext ? `Our Products:\n${englishProductsContext.substring(0, 1500)}` : ''}
 
-${ticketsContext ? `Past Cases:\n${ticketsContext.substring(0, 800)}` : ''}`;
+${ticketsContext ? `Previous Solutions:\n${ticketsContext.substring(0, 1000)}` : ''}`;
   }
 }
 
@@ -180,7 +188,7 @@ async function ollamaChat(message, customerId = null) {
 
     console.log('[ollama] 📤 Sending message to Ollama...');
     
-    // Call Ollama API with SPEED-OPTIMIZED parameters
+    // Call Ollama API with optimized parameters for Llama 3.1 8B
     const response = await ollama.chat({
       model: MODEL_NAME,
       messages: [
@@ -196,16 +204,16 @@ async function ollamaChat(message, customerId = null) {
       options: {
         temperature: TEMPERATURE,
         num_predict: MAX_TOKENS,
-        num_ctx: CONTEXT_SIZE, // Smaller context = faster
-        top_p: 0.7, // Reduced from 0.9 for speed
-        top_k: 20,  // Reduced from 40 for speed
+        num_ctx: CONTEXT_SIZE,
+        top_p: 0.9,
+        top_k: 40,
         repeat_penalty: 1.1,
-        num_thread: 4, // Use 4 threads for parallel processing
-        num_gpu: 1, // Use GPU if available (fallback to CPU)
-        num_batch: 512 // Batch size for faster processing
+        num_thread: 8, // Increased for 8B model
+        num_gpu: 1,
+        num_batch: 512
       },
       stream: false,
-      keep_alive: '10m' // Keep model in memory longer
+      keep_alive: '15m' // Keep model in memory longer for faster responses
     });
 
     const reply = response.message?.content || null;

@@ -61,14 +61,15 @@ if %errorLevel% neq 0 (
 )
 echo.
 
-echo [4/8] Downloading Llama 3.2 model (2GB)...
-echo   This may take several minutes...
-ollama list | find "llama3.2" >nul 2>&1
+echo [4/8] Downloading Llama 3.1 8B model (4.9GB)...
+echo   This model provides superior Arabic dialect support
+echo   Download may take 5-10 minutes depending on your connection...
+ollama list | find "llama3.1:8b" >nul 2>&1
 if %errorLevel% neq 0 (
-    ollama pull llama3.2
-    echo   √ Llama 3.2 model downloaded
+    ollama pull llama3.1:8b
+    echo   √ Llama 3.1 8B model downloaded successfully
 ) else (
-    echo   √ Llama 3.2 model already downloaded
+    echo   √ Llama 3.1 8B model already downloaded
 )
 echo.
 
