@@ -26,6 +26,240 @@ body {
   perspective: 1000px;
 }
 
+/* ==================== SPLASH SCREEN ==================== */
+.splash-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #E60000 0%, #C00000 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.splash-screen.enter {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.splash-screen.wave .splash-robot {
+  animation: robotWave 0.8s ease-in-out;
+}
+
+.splash-screen.exit {
+  opacity: 0;
+  transform: scale(0.3) translateY(-100vh);
+}
+
+.splash-robot {
+  width: 350px;
+  height: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+  position: relative;
+  filter: drop-shadow(0 20px 40px rgba(0, 0, 0, 0.3));
+  animation: floatRobot 3s ease-in-out infinite;
+}
+
+.splash-robot img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  animation: robotEnter 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+/* Fallback CSS Robot */
+.robot-fallback {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: robotEnter 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.robot-body {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.robot-head {
+  position: relative;
+  width: 120px;
+  height: 120px;
+  background: white;
+  border: 6px solid #333;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.robot-antenna {
+  position: absolute;
+  top: -30px;
+  width: 6px;
+  height: 30px;
+  background: #E60000;
+  border-radius: 3px;
+}
+
+.robot-antenna::after {
+  content: '';
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 16px;
+  height: 16px;
+  background: #E60000;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(230, 0, 0, 0.6);
+}
+
+.robot-face {
+  width: 90px;
+  height: 70px;
+  background: #333;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+
+.robot-eyes {
+  display: flex;
+  gap: 25px;
+  margin-bottom: 8px;
+}
+
+.robot-eye {
+  width: 16px;
+  height: 16px;
+  background: white;
+  border-radius: 50%;
+}
+
+.robot-smile {
+  width: 30px;
+  height: 12px;
+  border: 3px solid white;
+  border-top: none;
+  border-radius: 0 0 15px 15px;
+}
+
+.robot-torso {
+  width: 140px;
+  height: 100px;
+  background: #E60000;
+  border-radius: 20px;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  position: relative;
+}
+
+.ooredoo-badge {
+  background: white;
+  color: #E60000;
+  padding: 8px 20px;
+  border-radius: 15px;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.robot-arm {
+  position: absolute;
+  top: 140px;
+  width: 40px;
+  height: 80px;
+  background: #E60000;
+  border-radius: 20px;
+}
+
+.robot-arm-left {
+  left: -50px;
+  font-size: 2.5rem;
+  background: transparent;
+  animation: armWave 0.8s ease-in-out infinite;
+}
+
+.robot-arm-right {
+  right: -50px;
+}
+
+@keyframes armWave {
+  0%, 100% { transform: rotate(0deg); }
+  50% { transform: rotate(-25deg); }
+}
+
+.splash-text {
+  color: white;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  text-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  animation: fadeInUp 0.6s ease-out 0.3s both;
+}
+
+.splash-subtext {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 1.2rem;
+  font-weight: 400;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  animation: fadeInUp 0.6s ease-out 0.5s both;
+}
+
+@keyframes robotEnter {
+  0% {
+    opacity: 0;
+    transform: scale(0) rotate(-180deg);
+  }
+  60% {
+    transform: scale(1.1) rotate(10deg);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) rotate(0deg);
+  }
+}
+
+@keyframes robotWave {
+  0%, 100% { transform: rotate(0deg); }
+  10%, 30%, 50%, 70%, 90% { transform: rotate(5deg); }
+  20%, 40%, 60%, 80% { transform: rotate(-5deg); }
+}
+
+@keyframes floatRobot {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-20px); }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 /* ==================== CONTAINER ==================== */
 .chat-container {
   display: flex;

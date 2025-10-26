@@ -8,6 +8,8 @@ export default function Chat() {
   const [history, setHistory] = useState([]);
   const [loading, setLoading] = useState(false);
   const [showFAQ, setShowFAQ] = useState(false);
+  const [showSplash, setShowSplash] = useState(true);
+  const [splashPhase, setSplashPhase] = useState('enter'); // 'enter', 'wave', 'exit'
   const chatEndRef = useRef(null);
 
   // Common FAQ questions
@@ -23,6 +25,19 @@ export default function Chat() {
     { id: 9, question: "Backup jobs failing with errors", icon: "📦" },
     { id: 10, question: "SSL certificate expiration warnings", icon: "🔒" }
   ];
+
+  // Splash screen animation sequence
+  useEffect(() => {
+    const timer1 = setTimeout(() => setSplashPhase('wave'), 500);
+    const timer2 = setTimeout(() => setSplashPhase('exit'), 2500);
+    const timer3 = setTimeout(() => setShowSplash(false), 3500);
+    
+    return () => {
+      clearTimeout(timer1);
+      clearTimeout(timer2);
+      clearTimeout(timer3);
+    };
+  }, []);
 
   // Auto-scroll to bottom when new message arrives
   useEffect(() => {
@@ -66,6 +81,44 @@ export default function Chat() {
 
   return (
     <div className="chat-container">
+      {/* Splash Screen */}
+      {showSplash && (
+        <div className={`splash-screen ${splashPhase}`}>
+          <div className="splash-robot">
+            <img 
+              src="/ooredoo-robot.png" 
+              alt="Ooredoo Robot" 
+              onError={(e) => {
+                // Fallback to SVG if image not found
+                e.target.style.display = 'none';
+                e.target.nextSibling.style.display = 'flex';
+              }}
+            />
+            <div className="robot-fallback" style={{display: 'none'}}>
+              <div className="robot-body">
+                <div className="robot-head">
+                  <div className="robot-antenna"></div>
+                  <div className="robot-face">
+                    <div className="robot-eyes">
+                      <div className="robot-eye"></div>
+                      <div className="robot-eye"></div>
+                    </div>
+                    <div className="robot-smile"></div>
+                  </div>
+                </div>
+                <div className="robot-torso">
+                  <div className="ooredoo-badge">ooredoo</div>
+                </div>
+                <div className="robot-arm robot-arm-left">👋</div>
+                <div className="robot-arm robot-arm-right"></div>
+              </div>
+            </div>
+          </div>
+          <h1 className="splash-text">Welcome to Ooredoo</h1>
+          <p className="splash-subtext">Business Assistant</p>
+        </div>
+      )}
+
       {/* Header */}
       <div className="chat-header">
         <div className="header-content">
