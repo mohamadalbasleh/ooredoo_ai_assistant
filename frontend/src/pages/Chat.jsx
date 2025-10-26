@@ -7,7 +7,22 @@ export default function Chat() {
   const [msg, setMsg] = useState('');
   const [history, setHistory] = useState([]);
   const [loading, setLoading] = useState(false);
+  const [showFAQ, setShowFAQ] = useState(false);
   const chatEndRef = useRef(null);
+
+  // Common FAQ questions
+  const faqQuestions = [
+    { id: 1, question: "Complete internet outage - no connection", icon: "🔴" },
+    { id: 2, question: "Very slow internet speed affecting business", icon: "🐌" },
+    { id: 3, question: "VPN connection keeps failing", icon: "🔐" },
+    { id: 4, question: "Weak WiFi signal in some office areas", icon: "📶" },
+    { id: 5, question: "Intermittent connection drops throughout the day", icon: "⚠️" },
+    { id: 6, question: "Cannot access cloud server via SSH", icon: "☁️" },
+    { id: 7, question: "Cloud storage running out unexpectedly", icon: "💾" },
+    { id: 8, question: "Database connection timeout errors", icon: "🗄️" },
+    { id: 9, question: "Backup jobs failing with errors", icon: "📦" },
+    { id: 10, question: "SSL certificate expiration warnings", icon: "🔒" }
+  ];
 
   // Auto-scroll to bottom when new message arrives
   useEffect(() => {
@@ -75,7 +90,7 @@ export default function Chat() {
 
       {/* Chat Messages Area */}
       <div className="chat-messages">
-        {history.length === 0 && (
+        {history.length === 0 && !showFAQ && (
           <div className="welcome-screen">
             <div className="welcome-icon">👋</div>
             <h2>Welcome to Ooredoo Business Support</h2>
@@ -88,9 +103,58 @@ export default function Chat() {
                 ☁️ Cloud Services
               </button>
               <button className="suggestion-chip" onClick={() => setMsg('ما هي خدمات الأمن السيبراني؟')}>
-                � Cybersecurity (AR)
+                🔒 Cybersecurity (AR)
+              </button>
+              <button className="suggestion-chip" onClick={() => setShowFAQ(true)}>
+                ❓ FAQ
               </button>
             </div>
+          </div>
+        )}
+
+        {history.length === 0 && showFAQ && (
+          <div className="welcome-screen">
+            <div className="welcome-icon">❓</div>
+            <h2>Frequently Asked Questions</h2>
+            <p>Choose a question to get detailed troubleshooting steps:</p>
+            <div className="faq-list">
+              {faqQuestions.map((faq) => (
+                <button 
+                  key={faq.id} 
+                  className="faq-item" 
+                  onClick={async () => {
+                    const question = `How to solve: ${faq.question}`;
+                    setShowFAQ(false);
+                    setMsg('');
+                    
+                    const userMessage = { from: 'user', text: question, timestamp: new Date() };
+                    setHistory([userMessage]);
+                    setLoading(true);
+
+                    try {
+                      const res = await axios.post('/api/chat', { message: question });
+                      const answer = res?.data?.answer ? String(res.data.answer) : JSON.stringify(res.data);
+                      const assistantMessage = { from: 'assistant', text: answer, timestamp: new Date() };
+                      setHistory((prev) => [...prev, assistantMessage]);
+                    } catch (e) {
+                      console.error('Chat error:', e);
+                      setHistory((prev) => [
+                        ...prev,
+                        { from: 'assistant', text: '⚠️ Connection error. Please check if the server is running.', timestamp: new Date() },
+                      ]);
+                    } finally {
+                      setLoading(false);
+                    }
+                  }}
+                >
+                  <span className="faq-icon">{faq.icon}</span>
+                  <span className="faq-text">{faq.question}</span>
+                </button>
+              ))}
+            </div>
+            <button className="back-button" onClick={() => setShowFAQ(false)}>
+              ← Back to Main Menu
+            </button>
           </div>
         )}
 

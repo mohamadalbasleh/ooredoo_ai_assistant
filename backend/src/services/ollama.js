@@ -11,11 +11,11 @@ const ollama = new Ollama({
   host: process.env.OLLAMA_HOST || 'http://127.0.0.1:11434'
 });
 
-// Model configuration - OPTIMIZED FOR SPEED
+// Model configuration - OPTIMIZED FOR COMPLETE DATA LOADING
 const MODEL_NAME = process.env.OLLAMA_MODEL || 'llama3.2';
-const MAX_TOKENS = 80; // Reduced to 80 for even faster responses
+const MAX_TOKENS = 500; // Increased to 500 to list all 15 FAQ questions
 const TEMPERATURE = 0.1; // Lower for faster, more deterministic responses
-const CONTEXT_SIZE = 1024; // Even smaller context window (was 2048)
+const CONTEXT_SIZE = 8192; // Increased to 8192 to handle full FAQ file + products
 
 // In-memory data cache - ALL data files loaded into context
 let arabicCRMContext = '';
@@ -41,8 +41,8 @@ function loadCRMData() {
     if (fs.existsSync(arabicCRMPath)) {
       const arabicSQL = fs.readFileSync(arabicCRMPath, 'utf-8');
       const arabicLines = arabicSQL.split('\n').filter(line => line.startsWith('INSERT INTO customers'));
-      arabicCRMContext = arabicLines.slice(0, 10).join('\n');
-      console.log('[ollama] ✅ Loaded Arabic CRM data (10 customer records)');
+      arabicCRMContext = arabicLines.join('\n'); // Load ALL CRM data
+      console.log(`[ollama] ✅ Loaded Arabic CRM data (${arabicLines.length} customer records - ALL)`);
     }
 
     // 2. Load English CRM data
@@ -50,8 +50,8 @@ function loadCRMData() {
     if (fs.existsSync(englishCRMPath)) {
       const englishSQL = fs.readFileSync(englishCRMPath, 'utf-8');
       const englishLines = englishSQL.split('\n').filter(line => line.startsWith('INSERT INTO customers'));
-      englishCRMContext = englishLines.slice(0, 10).join('\n');
-      console.log('[ollama] ✅ Loaded English CRM data (10 customer records)');
+      englishCRMContext = englishLines.join('\n'); // Load ALL CRM data
+      console.log(`[ollama] ✅ Loaded English CRM data (${englishLines.length} customer records - ALL)`);
     }
 
     // 3. Load Arabic FAQs & Troubleshooting
@@ -66,28 +66,24 @@ function loadCRMData() {
     const arabicProductsPath = path.join(dataDir, 'products_arabic.json');
     if (fs.existsSync(arabicProductsPath)) {
       const productsData = JSON.parse(fs.readFileSync(arabicProductsPath, 'utf-8'));
-      // Store top 20 products for context (avoid overwhelming the model)
-      arabicProductsContext = JSON.stringify(productsData.slice(0, 20), null, 2);
-      console.log(`[ollama] ✅ Loaded Arabic Products (${productsData.length} total, using top 20)`);
+      arabicProductsContext = JSON.stringify(productsData, null, 2); // Load ALL products
+      console.log(`[ollama] ✅ Loaded Arabic Products (${productsData.length} products - ALL)`);
     }
 
     // 5. Load English Products
     const englishProductsPath = path.join(dataDir, 'products_english.json');
     if (fs.existsSync(englishProductsPath)) {
       const productsData = JSON.parse(fs.readFileSync(englishProductsPath, 'utf-8'));
-      // Store top 20 products for context
-      englishProductsContext = JSON.stringify(productsData.slice(0, 20), null, 2);
-      console.log(`[ollama] ✅ Loaded English Products (${productsData.length} total, using top 20)`);
+      englishProductsContext = JSON.stringify(productsData, null, 2); // Load ALL products
+      console.log(`[ollama] ✅ Loaded English Products (${productsData.length} products - ALL)`);
     }
 
     // 6. Load Historical Customer Tickets
     const ticketsPath = path.join(dataDir, 'historical_customer_tickets.csv');
     if (fs.existsSync(ticketsPath)) {
-      const ticketsCSV = fs.readFileSync(ticketsPath, 'utf-8');
-      // Load first 20 lines for context
-      const ticketLines = ticketsCSV.split('\n').slice(0, 21); // Header + 20 tickets
-      ticketsContext = ticketLines.join('\n');
-      console.log(`[ollama] ✅ Loaded Historical Tickets (20 recent tickets for context)`);
+      ticketsContext = fs.readFileSync(ticketsPath, 'utf-8'); // Load COMPLETE file
+      const ticketCount = ticketsContext.split('\n').length - 1; // -1 for header
+      console.log(`[ollama] ✅ Loaded Historical Tickets (${ticketCount} tickets - ALL)`);
     }
 
     isContextLoaded = true;
@@ -122,15 +118,31 @@ function detectLanguage(text) {
  */
 function buildSystemPrompt(language) {
   if (language === 'ar') {
-    // Minimal Arabic prompt - NO data context for speed
+    // Arabic prompt with relevant context
     return `أنت مساعد أوريدو للشركات في قطر. أجب بإيجاز وبشكل مباشر.
 
-خدمات متوفرة: إنترنت فايبر، سحابة، أمن سيبراني، اتصالات صوتية، Microsoft 365.`;
+خدمات متوفرة: إنترنت فايبر، سحابة، أمن سيبراني، اتصالات صوتية، Microsoft 365.
+
+تعليمات مهمة: عندما يسأل المستخدم عن الأسئلة الشائعة أو المشاكل التقنية، اعرض قائمة بجميع الأسئلة المتاحة (15 سؤال) من القسم التالي واطلب منهم اختيار واحد.
+
+${arabicFAQsContext ? `الأسئلة الشائعة والحلول:\n${arabicFAQsContext}` : ''}
+
+${arabicProductsContext ? `المنتجات:\n${arabicProductsContext.substring(0, 1000)}` : ''}
+
+${ticketsContext ? `حالات سابقة:\n${ticketsContext.substring(0, 800)}` : ''}`;
   } else {
-    // Minimal English prompt - NO data context for speed
+    // English prompt with relevant context
     return `You are Ooredoo B2B assistant in Qatar. Answer briefly and directly.
 
-Available: Fiber Internet, Cloud, Security, Voice, Microsoft 365.`;
+Available: Fiber Internet, Cloud, Security, Voice, Microsoft 365.
+
+IMPORTANT: When user asks about FAQs or common technical issues, list ALL available questions (15 total) from the following section as a numbered list and ask them to choose one.
+
+${arabicFAQsContext ? `FAQs & Troubleshooting Guide:\n${arabicFAQsContext}` : ''}
+
+${englishProductsContext ? `Products:\n${englishProductsContext.substring(0, 1000)}` : ''}
+
+${ticketsContext ? `Past Cases:\n${ticketsContext.substring(0, 800)}` : ''}`;
   }
 }
 
